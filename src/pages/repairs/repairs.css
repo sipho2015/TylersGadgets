@@ -1,0 +1,12 @@
+.repair-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.repair-grid article{padding:30px;border-radius:var(--radius);border:1px solid var(--line);background:white;display:flex;flex-direction:column;align-items:flex-start}
+.service-icon{width:48px;height:48px;display:grid;place-items:center;background:var(--surface);color:var(--accent);border-radius:12px;font-size:25px;margin-bottom:25px}
+.repair-grid h3{font-size:21px}.repair-grid p{font-size:14px;flex:1;margin-bottom:25px}.repair-grid .button{font-size:13px}
+.repair-enquiry-panel{display:grid;grid-template-columns:1fr 1fr;gap:60px;background:var(--surface);padding:45px;border-radius:var(--radius);margin-bottom:80px}
+.repair-enquiry-panel p{font-size:14px}
+#repair-enquiry-form{display:grid;gap:17px}
+#repair-enquiry-form label{display:grid;gap:7px;font-size:13px;font-weight:600}
+#repair-enquiry-form input,#repair-enquiry-form select{min-width:0;width:100%;padding:13px;background:white;border:1px solid #bbc9be;border-radius:8px;font-size:16px}
+@media(max-width:800px){.repair-grid{grid-template-columns:1fr 1fr;gap:15px}.repair-grid article{padding:23px}.repair-enquiry-panel{gap:30px;padding:30px}}
+@media(max-width:600px){.repair-enquiry-panel{grid-template-columns:1fr;padding:24px;margin-bottom:50px}}
+@media(max-width:450px){.repair-grid{grid-template-columns:1fr}}

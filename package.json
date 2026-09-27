@@ -1,0 +1,11 @@
+{
+  "name":"tylers-gadgets",
+  "private":true,
+  "type":"module",
+  "version":"1.0.0",
+  "scripts":{
+    "start":"node scripts/serve.mjs",
+    "test":"node --test",
+    "seo":"node scripts/build-seo.mjs"
+  }
+}

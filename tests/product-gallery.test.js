@@ -27,17 +27,17 @@ test('one through five photos render only the available thumbnails',()=>{
  }
 });
 
-test('price belongs only to the main image and sections follow the requested order',()=>{
+test('price appears once beside the product heading and sections follow the requested order',()=>{
  const product={...products[0],storage:'128GB',conditionInfo:'Excellent',price:450,oldPrice:500,boxed:true,whatsIncluded:['Device','Box'],warrantyInfo:'Confirmed test warranty'};
  const html=renderProductDetails(product);
  const mainArea=html.split('class="product-information"')[0];
  assert.equal((mainArea.match(/\$450/g)||[]).length,1);
- assert.ok(mainArea.indexOf('$450')>mainArea.indexOf('class="image-price"'));
- assert.ok(mainArea.indexOf('$450')<mainArea.indexOf('class="detail-copy"'));
- const headings=['Specifications','Overview','Condition','What’s Included','Delivery / Collection','Warranty','Related Products'];
+ assert.ok(mainArea.indexOf('$450')>mainArea.indexOf('class="detail-price"'));
+ assert.ok(mainArea.indexOf('$450')>mainArea.indexOf('class="detail-copy"'));
+ const headings=['Overview','Specifications','Device Condition &amp; Details','What’s Included','Share Product','You May Also Like'];
  let previous=-1;
  for(const heading of headings){const position=html.search(new RegExp('<h2[^>]*>'+heading+'</h2>'));assert.ok(position>previous,heading);previous=position;}
- assert.ok(html.includes('Used · Excellent'));
+ assert.ok(html.includes('<dd>Used</dd>'));assert.ok(html.includes('<dd>Excellent</dd>'));assert.ok(html.includes('Confirmed test warranty'));
  assert.ok(!html.includes('Previously owned device.'));
  const message=new URL(productEnquiry(product)).searchParams.get('text');
  for(const part of ['$450','128GB','Used','Boxed'])assert.ok(message.includes(part));
@@ -70,7 +70,7 @@ test('gallery events switch image and selected state, and viewer restores focus'
  globalThis.document={
   activeElement:buttons[0],body:{classList:{add(){locked=true;},remove(){locked=false;}}},
   querySelector(s){return {'.main-product-image':main,'.main-image-button':opener,'.product-viewer':dialog,'.thumbnails':strip}[s];},
-  querySelectorAll(){return buttons;}
+  querySelectorAll(selector){return selector==='[data-product-image]'?buttons:[];}
  };
  try{
   bindProductGallery();buttons[1].events.click();

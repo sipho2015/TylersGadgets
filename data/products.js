@@ -14,7 +14,7 @@ export const products = [
     "brand": "Apple",
     "category": "laptops",
     "price": null,
-    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85",
+    "image": "assets/products/laptops/macbook-air-reference.jpg",
     "condition": "Used",
     "availability": "in-stock",
     "description": "Slim, silent and seriously capable for study, work and creative projects.",
@@ -29,10 +29,7 @@ export const products = [
     "boxed": null,
     "featured": true,
     "images": [
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=85",
-      "assets/products/gallery/laptop-front.svg",
-      "assets/products/gallery/laptop-detail.svg",
-      "assets/products/gallery/laptop-profile.svg"
+      "assets/products/laptops/macbook-air-reference.jpg"
     ],
     "shortDescription": "Slim, silent and seriously capable for study, work and creative projects.",
     "storage": "256GB SSD",
@@ -40,7 +37,16 @@ export const products = [
       "amount": 14999,
       "currency": "ZAR"
     },
-    "priceStatus": "awaiting-usd-confirmation"
+    "priceStatus": "awaiting-usd-confirmation",
+    "referencePhoto": true,
+    "imageNote": "Reference MacBook photograph only; the model, generation and condition pictured may differ from the listed device. Ask for current photographs before purchasing.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/person-using-a-macbook-air-4974913/",
+      "author": "olia danilevich",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
   },
   {
     "id": "thinkpad-e14",
@@ -48,7 +54,7 @@ export const products = [
     "brand": "Lenovo",
     "category": "laptops",
     "price": null,
-    "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
+    "image": "assets/products/laptops/thinkpad-e14-reference.jpg",
     "condition": "Used",
     "availability": "in-stock",
     "description": "A business-ready laptop built for reliable all-day productivity.",
@@ -63,10 +69,7 @@ export const products = [
     "boxed": null,
     "featured": true,
     "images": [
-      "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=85",
-      "assets/products/gallery/laptop-front.svg",
-      "assets/products/gallery/laptop-detail.svg",
-      "assets/products/gallery/laptop-profile.svg"
+      "assets/products/laptops/thinkpad-e14-reference.jpg"
     ],
     "shortDescription": "A business-ready laptop built for reliable all-day productivity.",
     "storage": "512GB SSD",
@@ -74,7 +77,16 @@ export const products = [
       "amount": 10499,
       "currency": "ZAR"
     },
-    "priceStatus": "awaiting-usd-confirmation"
+    "priceStatus": "awaiting-usd-confirmation",
+    "referencePhoto": true,
+    "imageNote": "Reference ThinkPad E14 Gen 7 photograph; the generation and condition may differ from the listed device. Ask for current photographs before purchasing.",
+    "imageSource": {
+      "provider": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Lenovo_ThinkPad_E14_G7_14_WUXGA.jpg",
+      "author": "Rakoon",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
   },
   {
     "id": "powerbank",
@@ -82,7 +94,7 @@ export const products = [
     "brand": "Volt",
     "category": "accessories",
     "price": null,
-    "image": "https://images.unsplash.com/photo-1609592424824-76f9eebd3b9e?auto=format&fit=crop&w=900&q=85",
+    "image": "assets/products/accessories/power-bank-reference.jpg",
     "condition": "New",
     "availability": "in-stock",
     "description": "Keep your essential devices charged when you are on the move.",
@@ -97,17 +109,23 @@ export const products = [
     "boxed": null,
     "featured": false,
     "images": [
-      "https://images.unsplash.com/photo-1609592424824-76f9eebd3b9e?auto=format&fit=crop&w=900&q=85",
-      "assets/products/gallery/powerbank-front.svg",
-      "assets/products/gallery/powerbank-detail.svg",
-      "assets/products/gallery/powerbank-profile.svg"
+      "assets/products/accessories/power-bank-reference.jpg"
     ],
     "shortDescription": "Keep your essential devices charged when you are on the move.",
     "legacyPrice": {
       "amount": 699,
       "currency": "ZAR"
     },
-    "priceStatus": "awaiting-usd-confirmation"
+    "priceStatus": "awaiting-usd-confirmation",
+    "referencePhoto": true,
+    "imageNote": "Reference photograph only; the brand, model and features pictured may differ from the listed product. Ask for current photographs before purchasing.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/overhead-shot-of-a-cellphone-charging-from-a-power-bank-5208777/",
+      "author": "Kaboompics",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
   },
   {
     "id": "buds",
@@ -115,7 +133,7 @@ export const products = [
     "brand": "SoundGo",
     "category": "accessories",
     "price": null,
-    "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85",
+    "image": "assets/products/accessories/wireless-earbuds-reference.jpg",
     "condition": "New",
     "availability": "in-stock",
     "description": "Comfortable wireless listening with a compact charging case.",
@@ -130,17 +148,23 @@ export const products = [
     "boxed": null,
     "featured": false,
     "images": [
-      "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=85",
-      "assets/products/gallery/earbuds-front.svg",
-      "assets/products/gallery/earbuds-detail.svg",
-      "assets/products/gallery/earbuds-profile.svg"
+      "assets/products/accessories/wireless-earbuds-reference.jpg"
     ],
     "shortDescription": "Comfortable wireless listening with a compact charging case.",
     "legacyPrice": {
       "amount": 549,
       "currency": "ZAR"
     },
-    "priceStatus": "awaiting-usd-confirmation"
+    "priceStatus": "awaiting-usd-confirmation",
+    "referencePhoto": true,
+    "imageNote": "Reference photograph only; the brand, model and features pictured may differ from the listed product. Ask for current photographs before purchasing.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/minimalist-black-wireless-earbuds-on-white-background-33298189/",
+      "author": "Puru Raj",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
   },
   {
     "id": "iphone-x",
@@ -151,9 +175,9 @@ export const products = [
     "price": 120,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphoneX.jpeg",
+    "image": "assets/products/phones/iphones/iphoneX.jpeg",
     "images": [
-      "assets/products/phones/iphoneX.jpeg"
+      "assets/products/phones/iphones/iphoneX.jpeg"
     ],
     "shortDescription": "64GB storage. Clean condition. Face ID working.",
     "specifications": {
@@ -178,9 +202,9 @@ export const products = [
     "price": 180,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone Xr_Galore.jpeg",
+    "image": "assets/products/phones/iphones/iphone Xr_Galore.jpeg",
     "images": [
-      "assets/products/phones/iphone Xr_Galore.jpeg"
+      "assets/products/phones/iphones/iphone Xr_Galore.jpeg"
     ],
     "shortDescription": "128GB storage. Face ID working. Clean condition.",
     "specifications": {
@@ -206,9 +230,9 @@ export const products = [
     "price": 260,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphoneXr_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphoneXr_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphoneXr_Boxed.jpeg"
+      "assets/products/phones/iphones/iphoneXr_Boxed.jpeg"
     ],
     "shortDescription": "128GB storage. Boxed. Coral.",
     "highlights": [
@@ -233,9 +257,9 @@ export const products = [
     "price": 130,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone Xr_Galore.jpeg",
+    "image": "assets/products/phones/iphones/iphone Xr_Galore.jpeg",
     "images": [
-      "assets/products/phones/iphone Xr_Galore.jpeg"
+      "assets/products/phones/iphones/iphone Xr_Galore.jpeg"
     ],
     "shortDescription": "128GB storage. Orange. Clean condition. Face ID not working.",
     "specifications": {
@@ -264,9 +288,9 @@ export const products = [
     "price": 160,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone Xr_Galore.jpeg",
+    "image": "assets/products/phones/iphones/iphone Xr_Galore.jpeg",
     "images": [
-      "assets/products/phones/iphone Xr_Galore.jpeg"
+      "assets/products/phones/iphones/iphone Xr_Galore.jpeg"
     ],
     "shortDescription": "64GB storage. Black. Face ID working. Clean condition.",
     "specifications": {
@@ -295,9 +319,9 @@ export const products = [
     "price": 180,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphoneXr_Blue.jpeg",
+    "image": "assets/products/phones/iphones/iphoneXr_Blue.jpeg",
     "images": [
-      "assets/products/phones/iphoneXr_Blue.jpeg"
+      "assets/products/phones/iphones/iphoneXr_Blue.jpeg"
     ],
     "shortDescription": "128GB storage. 100% battery health. Clean condition. Face ID working.",
     "specifications": {
@@ -326,9 +350,9 @@ export const products = [
     "price": 190,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphoneXsMax.jpeg",
+    "image": "assets/products/phones/iphones/iphoneXsMax.jpeg",
     "images": [
-      "assets/products/phones/iphoneXsMax.jpeg"
+      "assets/products/phones/iphones/iphoneXsMax.jpeg"
     ],
     "shortDescription": "256GB storage. Clean condition. Face ID working. 100% battery health.",
     "specifications": {
@@ -355,9 +379,9 @@ export const products = [
     "price": 300,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphoneXsMax_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphoneXsMax_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphoneXsMax_Boxed.jpeg"
+      "assets/products/phones/iphones/iphoneXsMax_Boxed.jpeg"
     ],
     "shortDescription": "256GB storage. Boxed. Gold.",
     "highlights": [
@@ -382,9 +406,9 @@ export const products = [
     "price": 240,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone11.jpeg",
+    "image": "assets/products/phones/iphones/iphone11.jpeg",
     "images": [
-      "assets/products/phones/iphone11.jpeg"
+      "assets/products/phones/iphones/iphone11.jpeg"
     ],
     "shortDescription": "128GB storage. 100% battery health. Face ID working. Clean condition.",
     "specifications": {
@@ -411,10 +435,10 @@ export const products = [
     "price": 330,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphone11_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphone11_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphone11_Boxed.jpeg",
-      "assets/products/phones/ipphone11_Boxed.jpeg"
+      "assets/products/phones/iphones/iphone11_Boxed.jpeg",
+      "assets/products/phones/iphones/ipphone11_Boxed.jpeg"
     ],
     "shortDescription": "128GB storage. Green. Physical dual SIM. Boxed.",
     "highlights": [
@@ -441,9 +465,9 @@ export const products = [
     "price": 200,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone11ProMax.jpeg",
+    "image": "assets/products/phones/iphones/iphone11ProMax.jpeg",
     "images": [
-      "assets/products/phones/iphone11ProMax.jpeg"
+      "assets/products/phones/iphones/iphone11ProMax.jpeg"
     ],
     "shortDescription": "64GB storage. Face ID not working. Clean condition.",
     "specifications": {
@@ -468,9 +492,9 @@ export const products = [
     "price": 400,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphone11ProMax_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphone11ProMax_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphone11ProMax_Boxed.jpeg"
+      "assets/products/phones/iphones/iphone11ProMax_Boxed.jpeg"
     ],
     "shortDescription": "256GB storage. Boxed. White.",
     "highlights": [
@@ -495,9 +519,9 @@ export const products = [
     "price": 370,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone12ProMax.jpeg",
+    "image": "assets/products/phones/iphones/iphone12ProMax.jpeg",
     "images": [
-      "assets/products/phones/iphone12ProMax.jpeg"
+      "assets/products/phones/iphones/iphone12ProMax.jpeg"
     ],
     "shortDescription": "256GB storage. Clean condition. Face ID working.",
     "specifications": {
@@ -522,9 +546,9 @@ export const products = [
     "price": 80,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/Samsung A04e.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung A04e.jpeg",
     "images": [
-      "assets/products/phones/Samsung A04e.jpeg"
+      "assets/products/phones/Samsung/Samsung A04e.jpeg"
     ],
     "shortDescription": "32GB storage. Clean condition. Fully functional.",
     "specifications": {
@@ -549,9 +573,9 @@ export const products = [
     "price": 150,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/Samsung A07.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung A07.jpeg",
     "images": [
-      "assets/products/phones/Samsung A07.jpeg"
+      "assets/products/phones/Samsung/Samsung A07.jpeg"
     ],
     "shortDescription": "128GB storage. Boxed and sealed.",
     "specifications": {
@@ -575,9 +599,9 @@ export const products = [
     "price": 100,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/Samsung A14.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung A14.jpeg",
     "images": [
-      "assets/products/phones/Samsung A14.jpeg"
+      "assets/products/phones/Samsung/Samsung A14.jpeg"
     ],
     "shortDescription": "128GB storage. Side fingerprint. Choice of 2. Clean condition. $100 each.",
     "specifications": {
@@ -605,9 +629,9 @@ export const products = [
     "price": 480,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphone13_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphone13_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphone13_Boxed.jpeg"
+      "assets/products/phones/iphones/iphone13_Boxed.jpeg"
     ],
     "shortDescription": "128GB storage. White. Boxed.",
     "highlights": [
@@ -632,9 +656,9 @@ export const products = [
     "price": 500,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone13ProMax.jpeg",
+    "image": "assets/products/phones/iphones/iphone13ProMax.jpeg",
     "images": [
-      "assets/products/phones/iphone13ProMax.jpeg"
+      "assets/products/phones/iphones/iphone13ProMax.jpeg"
     ],
     "shortDescription": "128GB storage. 88% battery health. Face ID working. Clean condition.",
     "specifications": {
@@ -661,9 +685,9 @@ export const products = [
     "price": 570,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphone13ProMax_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphone13ProMax_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphone13ProMax_Boxed.jpeg"
+      "assets/products/phones/iphones/iphone13ProMax_Boxed.jpeg"
     ],
     "shortDescription": "128GB storage. Boxed.",
     "highlights": [
@@ -685,10 +709,10 @@ export const products = [
     "price": 550,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone14Plus.jpeg",
+    "image": "assets/products/phones/iphones/iphone14Plus.jpeg",
     "images": [
-      "assets/products/phones/iphone14Plus.jpeg",
-      "assets/products/phones/iphone14Plus_2.jpeg"
+      "assets/products/phones/iphones/iphone14Plus.jpeg",
+      "assets/products/phones/iphones/iphone14Plus_2.jpeg"
     ],
     "shortDescription": "128GB storage. Clean condition. Face ID working. iOS-to-iOS swaps accepted.",
     "specifications": {
@@ -715,10 +739,10 @@ export const products = [
     "price": 600,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone14ProMax.jpeg",
+    "image": "assets/products/phones/iphones/iphone14ProMax.jpeg",
     "images": [
-      "assets/products/phones/iphone14ProMax.jpeg",
-      "assets/products/phones/iphone14ProMax_2.jpeg"
+      "assets/products/phones/iphones/iphone14ProMax.jpeg",
+      "assets/products/phones/iphones/iphone14ProMax_2.jpeg"
     ],
     "shortDescription": "128GB storage. Clean condition. Face ID working. 100% battery health. Physical dual SIM.",
     "specifications": {
@@ -747,9 +771,9 @@ export const products = [
     "price": 700,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphone14ProMax_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphone14ProMax_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphone14ProMax_Boxed.jpeg"
+      "assets/products/phones/iphones/iphone14ProMax_Boxed.jpeg"
     ],
     "shortDescription": "128GB storage. Deep Purple. Boxed.",
     "highlights": [
@@ -774,9 +798,9 @@ export const products = [
     "price": 650,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone15.jpeg",
+    "image": "assets/products/phones/iphones/iphone15.jpeg",
     "images": [
-      "assets/products/phones/iphone15.jpeg"
+      "assets/products/phones/iphones/iphone15.jpeg"
     ],
     "shortDescription": "128GB storage. 89% battery health. Face ID working. Clean condition. ICASA approved. Physical dual SIM.",
     "specifications": {
@@ -807,9 +831,9 @@ export const products = [
     "price": 700,
     "boxed": true,
     "featured": false,
-    "image": "assets/products/phones/iphone15_Boxed.jpeg",
+    "image": "assets/products/phones/iphones/iphone15_Boxed.jpeg",
     "images": [
-      "assets/products/phones/iphone15_Boxed.jpeg"
+      "assets/products/phones/iphones/iphone15_Boxed.jpeg"
     ],
     "shortDescription": "128GB storage. Blue. Boxed.",
     "highlights": [
@@ -834,9 +858,9 @@ export const products = [
     "price": 800,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone15ProMax.jpeg",
+    "image": "assets/products/phones/iphones/iphone15ProMax.jpeg",
     "images": [
-      "assets/products/phones/iphone15ProMax.jpeg"
+      "assets/products/phones/iphones/iphone15ProMax.jpeg"
     ],
     "shortDescription": "256GB storage. 85% battery health. Clean condition. Face ID working. ICASA approved.",
     "specifications": {
@@ -865,9 +889,9 @@ export const products = [
     "price": 800,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone16.jpeg",
+    "image": "assets/products/phones/iphones/iphone16.jpeg",
     "images": [
-      "assets/products/phones/iphone16.jpeg"
+      "assets/products/phones/iphones/iphone16.jpeg"
     ],
     "shortDescription": "128GB storage. Face ID working. Clean condition. 88% battery health. ICASA approved.",
     "specifications": {
@@ -896,9 +920,9 @@ export const products = [
     "price": 850,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/iphone16Plus.jpeg",
+    "image": "assets/products/phones/iphones/iphone16Plus.jpeg",
     "images": [
-      "assets/products/phones/iphone16Plus.jpeg"
+      "assets/products/phones/iphones/iphone16Plus.jpeg"
     ],
     "shortDescription": "128GB storage. 94% battery health. ICASA approved. Face ID working. Clean condition. Black.",
     "specifications": {
@@ -930,9 +954,9 @@ export const products = [
     "price": 150,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/Samsung A16.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung A16.jpeg",
     "images": [
-      "assets/products/phones/Samsung A16.jpeg"
+      "assets/products/phones/Samsung/Samsung A16.jpeg"
     ],
     "shortDescription": "128GB storage. Clean condition.",
     "specifications": {
@@ -955,9 +979,9 @@ export const products = [
     "price": 150,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/Samsung A33 5G.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung A33 5G.jpeg",
     "images": [
-      "assets/products/phones/Samsung A33 5G.jpeg"
+      "assets/products/phones/Samsung/Samsung A33 5G.jpeg"
     ],
     "shortDescription": "128GB storage. On-screen fingerprint. 6GB RAM. Clean condition. Swaps accepted.",
     "specifications": {
@@ -986,9 +1010,9 @@ export const products = [
     "price": 300,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/Samsung A56 5G.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung A56 5G.jpeg",
     "images": [
-      "assets/products/phones/Samsung A56 5G.jpeg"
+      "assets/products/phones/Samsung/Samsung A56 5G.jpeg"
     ],
     "shortDescription": "256GB storage. On-screen fingerprint. Cleanest condition. 8GB RAM. ICASA approved. Physical dual SIM.",
     "specifications": {
@@ -1019,10 +1043,10 @@ export const products = [
     "price": 170,
     "boxed": false,
     "featured": false,
-    "image": "assets/products/phones/Samsung S20FE 5G.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung S20FE 5G.jpeg",
     "images": [
-      "assets/products/phones/Samsung S20FE 5G.jpeg",
-      "assets/products/phones/Samsung S20FE 5G_2.jpeg"
+      "assets/products/phones/Samsung/Samsung S20FE 5G.jpeg",
+      "assets/products/phones/Samsung/Samsung S20FE 5G_2.jpeg"
     ],
     "shortDescription": "128GB storage. Clean condition. New, no box. Dual SIM.",
     "specifications": {
@@ -1049,9 +1073,9 @@ export const products = [
     "price": 200,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/Samsung S20 Plus.jpeg",
+    "image": "assets/products/phones/Samsung/Samsung S20 Plus.jpeg",
     "images": [
-      "assets/products/phones/Samsung S20 Plus.jpeg"
+      "assets/products/phones/Samsung/Samsung S20 Plus.jpeg"
     ],
     "shortDescription": "128GB storage. On-screen fingerprint. Full screen. Clean condition. 12GB RAM.",
     "specifications": {
@@ -1080,9 +1104,9 @@ export const products = [
     "price": 200,
     "boxed": null,
     "featured": false,
-    "image": "assets/products/phones/SamsungS21 Ultra.jpeg",
+    "image": "assets/products/phones/Samsung/SamsungS21 Ultra.jpeg",
     "images": [
-      "assets/products/phones/SamsungS21 Ultra.jpeg"
+      "assets/products/phones/Samsung/SamsungS21 Ultra.jpeg"
     ],
     "shortDescription": "256GB storage. On-screen fingerprint. 12GB RAM. Clean condition. Small blot on screen.",
     "specifications": {
@@ -1101,6 +1125,628 @@ export const products = [
       "Small blot on screen"
     ],
     "description": "256GB storage. On-screen fingerprint. 12GB RAM. Clean condition. Small blot on screen."
+  },
+  {
+    "id": "phone-lanyard-straps",
+    "slug": "phone-lanyard-straps",
+    "name": "Phone Lanyard Straps",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory1.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory1.jpeg"
+    ],
+    "description": "Phone carrying straps. Ask about colours and compatibility.",
+    "shortDescription": "Phone carrying straps. Ask about colours and compatibility.",
+    "specifications": {}
+  },
+  {
+    "id": "phone-case-lanyard",
+    "slug": "phone-case-lanyard",
+    "name": "Phone Case with Lanyard",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory2.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory2.jpeg"
+    ],
+    "description": "Phone case with a carrying strap. Confirm the correct case for your phone model.",
+    "shortDescription": "Phone case with a carrying strap. Confirm the correct case for your phone model.",
+    "specifications": {}
+  },
+  {
+    "id": "usb-charging-hub",
+    "slug": "usb-charging-hub",
+    "name": "Multi-port USB Charging Hub",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory3.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory3.jpeg"
+    ],
+    "description": "USB charging hub. Ask about supported devices and charging specifications.",
+    "shortDescription": "USB charging hub. Ask about supported devices and charging specifications.",
+    "specifications": {}
+  },
+  {
+    "id": "magnetic-wireless-charger",
+    "slug": "magnetic-wireless-charger",
+    "name": "Magnetic Wireless Charger",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory4.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory4.jpeg"
+    ],
+    "description": "Magnetic wireless charging pad. Confirm compatibility with your device.",
+    "shortDescription": "Magnetic wireless charging pad. Confirm compatibility with your device.",
+    "specifications": {}
+  },
+  {
+    "id": "speaker-charging-stand",
+    "slug": "speaker-charging-stand",
+    "name": "Speaker with Light and Charging Stand",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory5.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory5.jpeg"
+    ],
+    "description": "Speaker with a light and phone charging stand. Ask about features and compatibility.",
+    "shortDescription": "Speaker with a light and phone charging stand. Ask about features and compatibility.",
+    "specifications": {}
+  },
+  {
+    "id": "usb-c-earphones",
+    "slug": "usb-c-earphones",
+    "name": "USB-C Wired Earphones",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory6.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory6.jpeg"
+    ],
+    "description": "Wired earphones with a USB-C connector. Confirm compatibility with your device.",
+    "shortDescription": "Wired earphones with a USB-C connector. Confirm compatibility with your device.",
+    "specifications": {}
+  },
+  {
+    "id": "wireless-earbuds-case",
+    "slug": "wireless-earbuds-case",
+    "name": "Wireless Earbuds with Charging Case",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory7.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory7.jpeg"
+    ],
+    "description": "Wireless earbuds with a charging case. Ask about the exact model and features.",
+    "shortDescription": "Wireless earbuds with a charging case. Ask about the exact model and features.",
+    "specifications": {}
+  },
+  {
+    "id": "smart-glasses",
+    "slug": "smart-glasses",
+    "name": "Smart Glasses",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "image": "assets/products/accessories/Accessory8.jpeg",
+    "images": [
+      "assets/products/accessories/Accessory8.jpeg"
+    ],
+    "description": "Smart glasses. Ask about the exact model, features and compatibility.",
+    "shortDescription": "Smart glasses. Ask about the exact model, features and compatibility.",
+    "specifications": {}
+  },
+  {
+    "id": "everyday-laptop",
+    "slug": "everyday-laptop",
+    "name": "Everyday Laptop",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/everyday-laptop-reference.jpg",
+    "images": [
+      "assets/products/laptops/everyday-laptop-reference.jpg"
+    ],
+    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
+    "shortDescription": "Reference listing. Product details and availability to confirm.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/silver-laptop-computer-on-table-291777/",
+      "author": "AS Photography",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "work-study-laptop",
+    "slug": "work-study-laptop",
+    "name": "Work & Study Laptop",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/work-study-laptop-reference.jpg",
+    "images": [
+      "assets/products/laptops/work-study-laptop-reference.jpg"
+    ],
+    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
+    "shortDescription": "Reference listing. Product details and availability to confirm.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/black-laptop-computer-and-wireless-mouse-on-table-2861984/",
+      "author": "Adam Sondel",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "wireless-mouse",
+    "slug": "wireless-mouse",
+    "name": "Wireless Mouse",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/wireless-mouse-reference.jpg",
+    "images": [
+      "assets/products/accessories/wireless-mouse-reference.jpg"
+    ],
+    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
+    "shortDescription": "Reference listing. Product details and availability to confirm.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/photograph-of-a-black-wireless-mouse-13870516/",
+      "author": "Matheus Bertelli",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "computer-keyboard",
+    "slug": "computer-keyboard",
+    "name": "Computer Keyboard",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/computer-keyboard-reference.jpg",
+    "images": [
+      "assets/products/accessories/computer-keyboard-reference.jpg"
+    ],
+    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
+    "shortDescription": "Reference listing. Product details and availability to confirm.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/a-black-computer-keyboard-on-white-background-20510020/",
+      "author": "Matheus Bertelli",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "over-ear-headphones",
+    "slug": "over-ear-headphones",
+    "name": "Over-Ear Headphones",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/over-ear-headphones-reference.jpg",
+    "images": [
+      "assets/products/accessories/over-ear-headphones-reference.jpg"
+    ],
+    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
+    "shortDescription": "Reference listing. Product details and availability to confirm.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/black-headphones-on-a-desk-16303234/",
+      "author": null,
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "portable-speaker",
+    "slug": "portable-speaker",
+    "name": "Portable Speaker",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/portable-speaker-reference.jpg",
+    "images": [
+      "assets/products/accessories/portable-speaker-reference.jpg"
+    ],
+    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
+    "shortDescription": "Reference listing. Product details and availability to confirm.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/rectangular-black-speaker-on-white-wooden-surface-374753/",
+      "author": null,
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "usb-wall-charger",
+    "slug": "usb-wall-charger",
+    "name": "USB Wall Charger Head",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/usb-wall-charger-reference.jpg",
+    "images": [
+      "assets/products/accessories/usb-wall-charger-reference.jpg"
+    ],
+    "description": "Looking for a replacement charger head for a phone or tablet? Ask us to match the wall plug, USB port and power requirements to your device. Confirm the actual model, charging output and whether a cable is included. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Replacement charger heads. Confirm the plug, port and charging output.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/white-adapter-on-a-blue-surface-4097207/",
+      "author": "Markus Winkler",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "usb-charging-cable",
+    "slug": "usb-charging-cable",
+    "name": "USB Charging Cable",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/usb-charging-cable-reference.jpg",
+    "images": [
+      "assets/products/accessories/usb-charging-cable-reference.jpg"
+    ],
+    "description": "A replacement charging cord for everyday use. Tell us the device model and the connectors needed at both ends so we can confirm a suitable cable, its length and supported charging or data functions. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Everyday charging cords. Confirm both connectors and cable length.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/close-up-photo-of-white-usb-cable-914915/",
+      "author": "Matthias Zomer",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "lightning-charging-cable",
+    "slug": "lightning-charging-cable",
+    "name": "Lightning Charging Cable",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/lightning-charging-cable-reference.jpg",
+    "images": [
+      "assets/products/accessories/lightning-charging-cable-reference.jpg"
+    ],
+    "description": "Looking for a Lightning charging cord for a compatible iPhone or iPad? Confirm your device model, the connector at the charger end, cable length and available options before purchasing. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Lightning cords for compatible devices. Confirm the charger-end connector.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/close-up-photography-of-white-iphone-charger-914912/",
+      "author": "Matthias Zomer",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "usb-hub",
+    "slug": "usb-hub",
+    "name": "USB Hub",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/usb-hub-reference.jpg",
+    "images": [
+      "assets/products/accessories/usb-hub-reference.jpg"
+    ],
+    "description": "Connect more accessories to a compatible computer. Tell us your laptop model and the ports you need so we can confirm an appropriate hub, connection type and supported functions. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "More connection options for your computer. Confirm ports and compatibility.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/a-usb-hub-plugged-into-a-laptop-7742586/",
+      "author": "Rann Vijay",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "travel-plug-adapter",
+    "slug": "travel-plug-adapter",
+    "name": "Travel Plug Adapter",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/travel-plug-adapter-reference.jpg",
+    "images": [
+      "assets/products/accessories/travel-plug-adapter-reference.jpg"
+    ],
+    "description": "Planning a trip or connecting a device with a different plug? Ask us to check the destination socket and your device requirements. Confirm the adapter type and electrical ratings; do not assume an adapter converts voltage. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Plug adapters for travel. Confirm the destination socket and ratings.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/universal-plug-adapter-on-cluttered-surface-32688515/",
+      "author": "Alexey Demidov",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "sd-memory-card",
+    "slug": "sd-memory-card",
+    "name": "SD Memory Card",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/sd-memory-card-reference.jpg",
+    "images": [
+      "assets/products/accessories/sd-memory-card-reference.jpg"
+    ],
+    "description": "Ask about removable storage for a compatible camera or device. Confirm the required card format, capacity, speed rating and device compatibility. The brand and capacity visible in the reference photo are illustrative. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Removable storage. Confirm format, capacity and device compatibility.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/128gb-lexar-micro-sd-card-adapter-1738642/",
+      "author": "Luis Quintero",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "laptop-stand",
+    "slug": "laptop-stand",
+    "name": "Laptop Stand",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/laptop-stand-reference.jpg",
+    "images": [
+      "assets/products/accessories/laptop-stand-reference.jpg"
+    ],
+    "description": "Raise a laptop on your desk with a suitable stand. Ask us to confirm the available design, supported laptop size, adjustment options and materials. The laptop and other desk equipment in the reference photo are not part of this listing. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Desk support for your laptop. Confirm size and stand design.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/modern-laptop-placed-on-stand-on-desk-4792717/",
+      "author": "Anete Lusina",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "car-phone-holder",
+    "slug": "car-phone-holder",
+    "name": "Car Phone Holder",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/car-phone-holder-reference.jpg",
+    "images": [
+      "assets/products/accessories/car-phone-holder-reference.jpg"
+    ],
+    "description": "Keep a compatible phone mounted in the car. Ask us to confirm the mounting style, phone and case fit, and any required mounting accessories before purchasing. The photographed design is illustrative. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Phone mounts for the car. Confirm mounting style and device fit.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/close-up-of-a-magnetic-phone-holder-13536013/",
+      "author": "Abdulvahap Demir",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "phone-tripod",
+    "slug": "phone-tripod",
+    "name": "Phone Tripod",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/phone-tripod-reference.jpg",
+    "images": [
+      "assets/products/accessories/phone-tripod-reference.jpg"
+    ],
+    "description": "A phone support option for photos, video calls or creating content. Confirm the phone clamp size, tripod design, height and included parts. The phone pictured is for illustration only. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Support for phone photos and videos. Confirm clamp size and included parts.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/a-mobile-phone-on-black-tripod-13709180/",
+      "author": "Amar Preciado",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "hdmi-cable",
+    "slug": "hdmi-cable",
+    "name": "HDMI Cable",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/hdmi-cable-reference.jpg",
+    "images": [
+      "assets/products/accessories/hdmi-cable-reference.jpg"
+    ],
+    "description": "Looking to connect compatible display equipment? Tell us the devices, required cable length and intended use so we can confirm connector types and supported display formats. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Display connection cables. Confirm connectors, length and supported formats.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/close-up-shot-of-an-hdmi-cable-12997230/",
+      "author": "Srattha Nualsate",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "usb-flash-drive",
+    "slug": "usb-flash-drive",
+    "name": "USB Flash Drive",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/usb-flash-drive-reference.jpg",
+    "images": [
+      "assets/products/accessories/usb-flash-drive-reference.jpg"
+    ],
+    "description": "Portable storage for compatible computers and devices. Ask us to confirm the connector, capacity, brand and transfer specifications. The reference photo shows example designs, not a multi-item bundle. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "Portable USB storage. Confirm connector type and capacity.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/usb-flash-drives-in-row-on-rough-surface-7442196/",
+      "author": "Jonathan Borba",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "portable-hard-drive",
+    "slug": "portable-hard-drive",
+    "name": "Portable Hard Drive",
+    "category": "accessories",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/accessories/portable-hard-drive-reference.jpg",
+    "images": [
+      "assets/products/accessories/portable-hard-drive-reference.jpg"
+    ],
+    "description": "Ask about external storage for your files and backups. Confirm the actual drive type, capacity, connection, compatibility and included cable before purchasing. Reference listing with illustrative photography. Confirm the actual product, condition, price and availability with us.",
+    "shortDescription": "External storage options. Confirm drive type, capacity and connection.",
+    "specifications": {},
+    "imageNote": "Illustrative reference photograph only. The pictured brand, model, capacity, design and other items shown do not confirm the product or available stock. Ask for current photographs and product details.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/black-square-device-on-brown-wooden-table-3915760/",
+      "author": "Andrea Piacquadio",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
   }
 ];
 

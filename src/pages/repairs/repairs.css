@@ -10,3 +10,4 @@
 @media(max-width:800px){.repair-grid{grid-template-columns:1fr 1fr;gap:15px}.repair-grid article{padding:23px}.repair-enquiry-panel{gap:30px;padding:30px}}
 @media(max-width:600px){.repair-enquiry-panel{grid-template-columns:1fr;padding:24px;margin-bottom:50px}}
 @media(max-width:450px){.repair-grid{grid-template-columns:1fr}}
+#repair-enquiry-form textarea{width:100%;border:1px solid #bbc9be;border-radius:8px;padding:13px;background:white;font-size:16px}.repair-showcase{display:grid;gap:28px}.repair-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}.repair-pair figure{margin:0}.repair-pair img{width:100%;aspect-ratio:1;object-fit:contain}.repair-pair figcaption{padding:12px;font-size:14px}

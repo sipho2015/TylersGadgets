@@ -6,7 +6,7 @@ export const media={
  hero:photo('photo-1496181133206-80ce9b88a853',1400),
  phones:products.find(p=>p.category==='phones')?.image||'assets/placeholders/phone.svg',
  laptops:photo('photo-1517336714731-489689fd1ca8',700),
- accessories:photo('photo-1606220945770-b5b6c2c55bf1',700),
+ accessories:'assets/products/accessories/Accessory1.jpeg',
  repairs:photo('photo-1588702547919-26089e690ecc'),
  about:photo('photo-1496181133206-80ce9b88a853'),
  lifestyle:products.find(p=>p.category==='phones')?.image||'assets/placeholders/phone.svg',
@@ -22,9 +22,74 @@ export function getFaqs(){return [
  ['How do I know whether a device is available?','Listings show In Stock, Low Stock, Sold or Coming Soon. Sold devices cannot be ordered through their listing. Confirm current availability on WhatsApp before completing a transaction.']
 ];}
 export const galleryItems=[
- ...products.filter(p=>p.category==='phones').flatMap(p=>[...new Set([p.image,...(p.images||[])].filter(Boolean))].map((image,index)=>({image,category:'Phones',brand:p.brand,title:p.name,alt:p.name+' photo '+(index+1),productId:p.slug||p.id}))),
- {image:media.laptops,category:'Laptops',title:'A space to create',alt:'Laptop on a workspace'},
- {image:media.accessories,category:'Accessories',title:'The little essentials',alt:'Wireless earbuds and charging case'},
- {image:media.repairs,category:'Repairs',title:'Let’s talk device care',alt:'Computer equipment on a work surface'},
- {image:media.about,category:'Laptops',title:'Ready for your next idea',alt:'Open laptop on a table'}
+  {
+    "image": "assets/products/gallery/iphoneXr_Boxed.jpeg",
+    "category": "Phones",
+    "brand": "Apple",
+    "title": "iPhone XR (Boxed)",
+    "alt": "iPhone XR (Boxed)"
+  },
+  {
+    "image": "assets/products/gallery/iphone13ProMax_Boxed.jpeg",
+    "category": "Phones",
+    "brand": "Apple",
+    "title": "iPhone 13 Pro Max (Boxed)",
+    "alt": "iPhone 13 Pro Max (Boxed)"
+  },
+  {
+    "image": "assets/products/gallery/iphone14ProMax_Boxed.jpeg",
+    "category": "Phones",
+    "brand": "Apple",
+    "title": "iPhone 14 Pro Max (Boxed)",
+    "alt": "iPhone 14 Pro Max (Boxed)"
+  },
+  {
+    "image": "assets/products/gallery/iphone15_Boxed.jpeg",
+    "category": "Phones",
+    "brand": "Apple",
+    "title": "iPhone 15 (Boxed)",
+    "alt": "iPhone 15 (Boxed)"
+  },
+  {
+    "image": "assets/products/gallery/Samsung A07.jpeg",
+    "category": "Phones",
+    "brand": "Samsung",
+    "title": "Samsung Galaxy A07",
+    "alt": "Samsung Galaxy A07"
+  },
+  {
+    "image": "assets/products/gallery/Samsung S20FE 5G_2.jpeg",
+    "category": "Phones",
+    "brand": "Samsung",
+    "title": "Samsung Galaxy S20 FE 5G",
+    "alt": "Samsung Galaxy S20 FE 5G"
+  },
+  {
+    "image": "assets/products/gallery/SamsungS21 Ultra.jpeg",
+    "category": "Phones",
+    "brand": "Samsung",
+    "title": "Samsung Galaxy S21 Ultra",
+    "alt": "Samsung Galaxy S21 Ultra"
+  },
+  {
+    "image": "assets/products/gallery/Accessory2.jpeg",
+    "category": "Accessories",
+    "title": "Phone Case with Lanyard",
+    "alt": "Phone Case with Lanyard"
+  },
+  {
+    "image": "assets/products/gallery/Accessory6.jpeg",
+    "category": "Accessories",
+    "title": "USB-C Wired Earphones",
+    "alt": "USB-C Wired Earphones"
+  },
+  {
+    "image": "assets/products/gallery/Accessory7.jpeg",
+    "category": "Accessories",
+    "title": "Wireless Earbuds with Charging Case",
+    "alt": "Wireless Earbuds with Charging Case"
+  }
 ];
+
+// Add approved real repair examples: {model, repairType, before, after, description}.
+export const repairShowcases=[];

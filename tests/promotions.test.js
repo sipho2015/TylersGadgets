@@ -1,0 +1,30 @@
+﻿import test from 'node:test';
+import assert from 'node:assert/strict';
+import {activeOffer,newArrivals,validDate} from '../src/core/promotions.js';
+import {products} from '../data/products.js';
+import {renderHome} from '../src/pages/home/home.js';
+import {renderRepairShowcase} from '../src/pages/repairs/repairs.js';
+import {multiProductLinks,productEmail} from '../src/core/enquiries.js';
+import {productCard} from '../src/core/ui.js';
+import {filterProducts} from '../src/pages/catalog/catalog.js';
+test('new arrivals require real dates or maintained flags and offers require valid prices',()=>{
+ const now=new Date('2026-10-14T12:00:00Z');
+ assert.equal(validDate('2026-02-30'),null);assert.equal(validDate('invalid'),null);
+ const items=[{id:'a'},{id:'b',dateAdded:'2026-10-01'},{id:'c',dateAdded:'2027-01-01'},{id:'d',newArrival:true},{id:'e',dateAdded:'2025-01-01'}];
+ assert.deepEqual(newArrivals(items,now).map(p=>p.id),['b','d']);
+ assert.equal(activeOffer({price:120},now),null);assert.equal(activeOffer({price:120,oldPrice:100},now),null);
+ assert.equal(activeOffer({price:80,oldPrice:100,promotionExpiry:'2026-10-13'},now),null);
+ assert.equal(activeOffer({price:80,oldPrice:100,promotionExpiry:'bad'},now),null);
+ assert.equal(activeOffer({price:80,oldPrice:100,availability:'sold'},now),null);
+ assert.equal(activeOffer({price:80,oldPrice:100,promotionExpiry:'2026-10-14'},now).discount,20);
+ assert.equal(newArrivals(products,now).length,0);assert.equal(products.filter(p=>activeOffer(p,now)).length,0);
+ assert.ok(!renderHome().includes('<h2>New arrivals</h2>'));assert.ok(!renderHome().includes('<h2>Special offers</h2>'));
+ assert.equal(renderRepairShowcase(),'');
+});
+test('a maintained promotional price is consistent across cards, sorting and enquiries',()=>{
+ const offer={...products[0],price:null,originalPrice:100,promotionalPrice:80};
+ assert.ok(productCard(offer).includes('$80'));assert.ok(!productCard(offer).includes('Contact for Price'));
+ assert.ok(new URL(productEmail(offer)).searchParams.get('body').includes('$80'));
+ assert.ok(new URL(multiProductLinks([offer]).whatsapp).searchParams.get('text').includes('$80'));
+ assert.equal(filterProducts([{...products[1],price:90},offer],{sort:'low'})[0].id,offer.id);
+});

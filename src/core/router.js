@@ -1,3 +1,8 @@
+import { structuredData } from './seo.js';
+import { routeFromLocation,staticLinks,publicUrl } from './urls.js';
+import { bindTradeForm } from './contact-forms.js';
+import { collectionToolbar,bindCollections,recentlyViewed } from '../pages/catalog/collections.js';
+import { selections } from './selections.js';
 import { header,footer } from './ui.js';
 import { products } from '../../data/products.js';
 import { siteConfig as c } from '../../data/site-config.js';
@@ -8,7 +13,7 @@ import { renderCatalog,bindCatalogFilters } from '../pages/catalog/catalog.js';
 import { renderProduct,bindProductGallery } from '../pages/product/product.js';
 import { renderRepairs,bindRepairEnquiry } from '../pages/repairs/repairs.js';
 import { renderGallery,bindGallery } from '../pages/gallery/gallery.js';
-import { renderAbout } from '../pages/about/about.js';
+import { renderAbout,aboutMetadata } from '../pages/about/about.js';
 import { renderPolicy } from '../pages/policies/policies.js';
 export function pageFor(route){
  if(route.startsWith('product/'))return renderProduct(route.split('/')[1]);
@@ -20,6 +25,7 @@ export function pageFor(route){
  return renderHome();
 }
 export function routeMetadata(route){
+ if(route==='about')return aboutMetadata();
  const p=route.startsWith('product/')?products.find(p=>p.id===route.split('/')[1]||p.slug===route.split('/')[1]):null;
  const policy=getPolicies()[route];
  const labels={home:'Phones, laptops & device repairs',gadgets:'Find Your Next Device',shop:'Find Your Next Device',repairs:'Phone & Device Repairs',gallery:'Gallery',about:'About',contact:'Contact',phones:'Phones',laptops:'Laptops',accessories:'Accessories',delivery:'Delivery & Collection'};
@@ -45,17 +51,29 @@ function metadata(route){
  const meta=routeMetadata(route);document.title=meta.title;
  for(const selector of ['meta[name="description"]','meta[property="og:description"]','meta[name="twitter:description"]'])document.querySelector(selector)?.setAttribute('content',meta.description);
  for(const selector of ['meta[property="og:title"]','meta[name="twitter:title"]'])document.querySelector(selector)?.setAttribute('content',meta.title);
- for(const selector of ['meta[property="og:image"]','meta[name="twitter:image"]'])document.querySelector(selector)?.setAttribute('content',meta.image);
+ for(const selector of ['meta[property="og:image"]','meta[name="twitter:image"]'])document.querySelector(selector)?.setAttribute('content',new URL(meta.image,location.origin).href);
  document.querySelector('link[rel="canonical"]')?.remove();
- // Hash routes share a single public document; no fictitious separate canonical URLs.
- if(c.siteUrl){const link=document.createElement('link');link.rel='canonical';link.href=c.siteUrl;document.head.append(link);}
+ document.querySelectorAll('script[type="application/ld+json"]').forEach(el=>el.remove());
+ const base=c.siteUrl||(document.documentElement.dataset.static==='true'?location.origin:null);
+ const schema=document.createElement('script');schema.type='application/ld+json';schema.textContent=JSON.stringify(structuredData(route,base));document.head.append(schema);
+ if(base){const link=document.createElement('link');link.rel='canonical';link.href=publicUrl(route,base);document.head.append(link);document.querySelector('meta[property="og:url"]')?.setAttribute('content',link.href);}
 }
+let firstRender=true;
 export function renderRoute(){
- let route=location.hash.slice(1)||'home';
+ let route=document.documentElement.dataset.static==='true'?routeFromLocation(location):location.hash.slice(1)||'home';
  if(route==='main'){const main=document.querySelector('#main');if(main){main.focus();return;}route='home';}
  document.body.classList.remove('modal-open');
- document.querySelector('#app').innerHTML=header(route)+pageFor(route)+footer();
- bindMenu();bindCatalogFilters();bindProductGallery();bindGallery();bindRepairEnquiry();metadata(route);
+ const product=route.startsWith('product/')?products.find(p=>p.id===route.split('/')[1]||p.slug===route.split('/')[1]):null;
+ if(product)selections.visit(product.id);
+ if(!(firstRender&&document.documentElement.dataset.static==='true'&&document.documentElement.dataset.route===route&&document.querySelector('#app main'))){
+  const content=header(route)+collectionToolbar()+pageFor(route)+footer();
+  document.querySelector('#app').innerHTML=document.documentElement.dataset.static==='true'?staticLinks(content):content;
+ }
+ if(firstRender&&document.documentElement.dataset.static==='true'&&(['gadgets','phones','laptops','accessories'].includes(route)||product)){
+  if(!document.querySelector('.recent-products'))document.querySelector('#main')?.insertAdjacentHTML('beforeend',staticLinks(recentlyViewed(product?.id)));
+ }
+ firstRender=false;
+ bindMenu();bindCollections();bindCatalogFilters();bindProductGallery();bindGallery();bindRepairEnquiry();bindTradeForm();metadata(route);
  requestAnimationFrame(()=>{
   const target=['home','delivery','contact'].includes(route)&&document.getElementById(route);
   target?target.scrollIntoView():window.scrollTo(0,0);

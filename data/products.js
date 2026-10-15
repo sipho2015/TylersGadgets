@@ -10,7 +10,7 @@
 export const products = [
   {
     "id": "macbook-air",
-    "name": "MacBook Air M1",
+    "name": "MacBook Air 13-inch M1 (2020)",
     "brand": "Apple",
     "category": "laptops",
     "price": null,
@@ -22,7 +22,8 @@ export const products = [
       "processor": "Apple M1 chip",
       "ram": "8GB unified memory",
       "storage": "256GB SSD",
-      "display": "13.3-inch Retina display"
+      "display": "13.3-inch Retina display",
+      "modelYear": "2020"
     },
     "slug": "macbook-air",
     "conditionInfo": "Like new",
@@ -46,23 +47,25 @@ export const products = [
       "author": "olia danilevich",
       "license": "Pexels License",
       "licenseUrl": "https://www.pexels.com/license/"
-    }
+    },
+    "model": "MacBook Air (M1, 2020)"
   },
   {
     "id": "thinkpad-e14",
-    "name": "Lenovo ThinkPad E14",
+    "name": "Lenovo ThinkPad E14 - Core i5",
     "brand": "Lenovo",
     "category": "laptops",
     "price": null,
     "image": "assets/products/laptops/thinkpad-e14-reference.jpg",
     "condition": "Used",
     "availability": "in-stock",
-    "description": "A business-ready laptop built for reliable all-day productivity.",
+    "description": "Intel Core i5, 16GB RAM, 512GB SSD. Exact processor generation and model year to confirm. A business laptop for work and study.",
     "specifications": {
       "processor": "Intel Core i5",
       "ram": "16GB RAM",
       "storage": "512GB SSD",
-      "display": "14-inch FHD display"
+      "display": "14-inch FHD display",
+      "generation": "Generation / year to confirm"
     },
     "slug": "thinkpad-e14",
     "conditionInfo": "Excellent",
@@ -71,7 +74,7 @@ export const products = [
     "images": [
       "assets/products/laptops/thinkpad-e14-reference.jpg"
     ],
-    "shortDescription": "A business-ready laptop built for reliable all-day productivity.",
+    "shortDescription": "Intel Core i5, 16GB RAM, 512GB SSD. Exact processor generation and model year to confirm.",
     "storage": "512GB SSD",
     "legacyPrice": {
       "amount": 10499,
@@ -1265,7 +1268,9 @@ export const products = [
   {
     "id": "everyday-laptop",
     "slug": "everyday-laptop",
-    "name": "Everyday Laptop",
+    "brand": "HP",
+    "name": "HP EliteBook 840 G8 - Core i5 11th Gen",
+    "model": "EliteBook 840 G8",
     "category": "laptops",
     "price": null,
     "priceStatus": "awaiting-usd-confirmation",
@@ -1273,18 +1278,23 @@ export const products = [
     "featured": false,
     "referenceOnly": true,
     "referencePhoto": true,
-    "image": "assets/products/laptops/everyday-laptop-reference.jpg",
+    "image": "assets/products/laptops/hp-elitebook-840-g8-reference.jpg",
     "images": [
-      "assets/products/laptops/everyday-laptop-reference.jpg"
+      "assets/products/laptops/hp-elitebook-840-g8-reference.jpg"
     ],
-    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
-    "shortDescription": "Reference listing. Product details and availability to confirm.",
-    "specifications": {},
-    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "description": "EliteBook 840 G8 with Intel Core i5-1135G7 (11th Gen) and a 14-inch display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Intel Core i5-1135G7 (11th Gen). 14-inch display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Intel Core i5-1135G7 (11th Gen)",
+      "generation": "G8",
+      "display": "14-inch"
+    },
+    "specificationSource": "https://h20195.www2.hp.com/v2/GetPDF.aspx/c06976939.pdf",
+    "imageNote": "Illustrative HP photograph only; this is not a photograph of the listed EliteBook 840 G8. The pictured model, generation and condition differ or are unverified. Ask for current photographs of the exact device.",
     "imageSource": {
       "provider": "Pexels",
-      "url": "https://www.pexels.com/photo/silver-laptop-computer-on-table-291777/",
-      "author": "AS Photography",
+      "url": "https://www.pexels.com/photo/black-and-silver-hp-laptop-computer-13823992/",
+      "author": "Damir K .",
       "license": "Pexels License",
       "licenseUrl": "https://www.pexels.com/license/"
     }
@@ -1292,7 +1302,9 @@ export const products = [
   {
     "id": "work-study-laptop",
     "slug": "work-study-laptop",
-    "name": "Work & Study Laptop",
+    "brand": "Dell",
+    "name": "Dell Latitude 5420 - Core i5 11th Gen",
+    "model": "Latitude 5420",
     "category": "laptops",
     "price": null,
     "priceStatus": "awaiting-usd-confirmation",
@@ -1300,17 +1312,22 @@ export const products = [
     "featured": false,
     "referenceOnly": true,
     "referencePhoto": true,
-    "image": "assets/products/laptops/work-study-laptop-reference.jpg",
+    "image": "assets/products/laptops/dell-latitude-5420-reference.jpg",
     "images": [
-      "assets/products/laptops/work-study-laptop-reference.jpg"
+      "assets/products/laptops/dell-latitude-5420-reference.jpg"
     ],
-    "description": "Reference listing with illustrative photography. Confirm the actual brand, model, specifications, condition, price and availability with us before arranging a purchase.",
-    "shortDescription": "Reference listing. Product details and availability to confirm.",
-    "specifications": {},
-    "imageNote": "Illustrative reference photograph only. This image does not confirm the exact product or available stock. Ask for current photographs and product details.",
+    "description": "Latitude 5420 with Intel Core i5-1145G7 (11th Gen) and a 14-inch display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Intel Core i5-1145G7 (11th Gen). 14-inch display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Intel Core i5-1145G7 (11th Gen)",
+      "generation": "5420",
+      "display": "14-inch"
+    },
+    "specificationSource": "https://www.dell.com/en-us/shop/dell-laptops/latitude-5420-laptop/spd/latitude-5420-laptop/s021l542014us",
+    "imageNote": "Illustrative Dell photograph only; this is not a photograph of the listed Latitude 5420. The pictured model, generation and condition differ or are unverified. Ask for current photographs of the exact device.",
     "imageSource": {
       "provider": "Pexels",
-      "url": "https://www.pexels.com/photo/black-laptop-computer-and-wireless-mouse-on-table-2861984/",
+      "url": "https://www.pexels.com/photo/black-dell-laptop-on-white-desk-1466609/",
       "author": "Adam Sondel",
       "license": "Pexels License",
       "licenseUrl": "https://www.pexels.com/license/"
@@ -1744,6 +1761,211 @@ export const products = [
       "provider": "Pexels",
       "url": "https://www.pexels.com/photo/black-square-device-on-brown-wooden-table-3915760/",
       "author": "Andrea Piacquadio",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "hp-probook-450-g8",
+    "slug": "hp-probook-450-g8",
+    "brand": "HP",
+    "name": "HP ProBook 450 G8 - Core i5 11th Gen",
+    "model": "ProBook 450 G8",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/everyday-laptop-reference.jpg",
+    "images": [
+      "assets/products/laptops/everyday-laptop-reference.jpg"
+    ],
+    "description": "ProBook 450 G8 with Intel Core i5-1135G7 (11th Gen) and a 15.6-inch display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Intel Core i5-1135G7 (11th Gen). 15.6-inch display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Intel Core i5-1135G7 (11th Gen)",
+      "generation": "G8",
+      "display": "15.6-inch"
+    },
+    "specificationSource": "https://www.hp.com/us-en/laptops/business/probook-400/product-card/hp-probook-450-g8.html",
+    "imageNote": "Illustrative laptop reference photograph only; the pictured brand, model, generation and condition may differ. Ask for current photographs of the exact device.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/silver-laptop-computer-on-table-291777/",
+      "author": "AS Photography",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "dell-latitude-5520",
+    "slug": "dell-latitude-5520",
+    "brand": "Dell",
+    "name": "Dell Latitude 5520 - Core i5 11th Gen",
+    "model": "Latitude 5520",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/dell-latitude-5520-reference.jpg",
+    "images": [
+      "assets/products/laptops/dell-latitude-5520-reference.jpg"
+    ],
+    "description": "Latitude 5520 with Intel Core i5-1145G7 (11th Gen) and a 15.6-inch display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Intel Core i5-1145G7 (11th Gen). 15.6-inch display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Intel Core i5-1145G7 (11th Gen)",
+      "generation": "5520",
+      "display": "15.6-inch"
+    },
+    "specificationSource": "https://www.dell.com/en-us/shop/dell-laptops-and-notebooks/new-latitude-5520-business-laptop/spd/latitude-15-5520-laptop/S002L552015US",
+    "imageNote": "Illustrative Dell photograph only; this is not a photograph of the listed Latitude 5520. The pictured model, generation and condition differ or are unverified. Ask for current photographs of the exact device.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/photo-of-silver-dell-laptop-9474023/",
+      "author": "Yash Maramangallam",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "lenovo-thinkpad-t14-gen-2",
+    "slug": "lenovo-thinkpad-t14-gen-2",
+    "brand": "Lenovo",
+    "name": "Lenovo ThinkPad T14 Gen 2 - Core i5 11th Gen",
+    "model": "ThinkPad T14 Gen 2 (Intel)",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/lenovo-thinkpad-t14-gen-2-reference.jpg",
+    "images": [
+      "assets/products/laptops/lenovo-thinkpad-t14-gen-2-reference.jpg"
+    ],
+    "description": "ThinkPad T14 Gen 2 (Intel) with Intel Core i5-1135G7 (11th Gen) and a 14-inch display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Intel Core i5-1135G7 (11th Gen). 14-inch display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Intel Core i5-1135G7 (11th Gen)",
+      "generation": "Gen 2",
+      "display": "14-inch"
+    },
+    "specificationSource": "https://psref.lenovo.com/Product/ThinkPad/ThinkPad_T14_Gen_2_Intel?tab=spec",
+    "imageNote": "Illustrative Lenovo photograph only; this is not a photograph of the listed ThinkPad T14 Gen 2 (Intel). The pictured model, generation and condition differ or are unverified. Ask for current photographs of the exact device.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/black-and-silver-laptop-computer-3550482/",
+      "author": "Olena Bohovyk",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "macbook-air-m4-2025",
+    "slug": "macbook-air-m4-2025",
+    "brand": "Apple",
+    "name": "MacBook Air 13-inch M4 (2025)",
+    "model": "MacBook Air (13-inch, M4, 2025)",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/macbook-air-m4-2025-reference.jpg",
+    "images": [
+      "assets/products/laptops/macbook-air-m4-2025-reference.jpg"
+    ],
+    "description": "MacBook Air (13-inch, M4, 2025) with Apple M4 chip and a 13.6-inch Liquid Retina display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Apple M4 chip. 13.6-inch Liquid Retina display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Apple M4 chip",
+      "generation": "M4 (2025)",
+      "display": "13.6-inch Liquid Retina",
+      "modelYear": "2025"
+    },
+    "specificationSource": "https://support.apple.com/en-by/122209",
+    "imageNote": "Illustrative photograph of an older Intel-era MacBook Air, not the M4 (2025) model or actual stock. Ask for current photographs of the exact device.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/close-up-photography-of-macbook-air-943596/",
+      "author": "Archie Binamira",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "asus-vivobook-15-x1504va",
+    "slug": "asus-vivobook-15-x1504va",
+    "brand": "ASUS",
+    "name": "ASUS Vivobook 15 X1504VA - Core i5 13th Gen",
+    "model": "Vivobook 15 X1504VA",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/asus-vivobook-15-x1504va-reference.jpg",
+    "images": [
+      "assets/products/laptops/asus-vivobook-15-x1504va-reference.jpg"
+    ],
+    "description": "Vivobook 15 X1504VA with Intel Core i5-1335U (13th Gen) and a 15.6-inch display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Intel Core i5-1335U (13th Gen). 15.6-inch display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Intel Core i5-1335U (13th Gen)",
+      "generation": "X1504VA",
+      "display": "15.6-inch"
+    },
+    "specificationSource": "https://www.asus.com/bt/laptops/for-home/vivobook/asus-vivobook-15-x1504/techspec/",
+    "imageNote": "Illustrative ASUS photograph only; this is not a photograph of the listed Vivobook 15 X1504VA. The pictured model, generation and condition differ or are unverified. Ask for current photographs of the exact device.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/black-asus-laptop-691810/",
+      "author": "ahevr x",
+      "license": "Pexels License",
+      "licenseUrl": "https://www.pexels.com/license/"
+    }
+  },
+  {
+    "id": "asus-vivobook-16-x1605va",
+    "slug": "asus-vivobook-16-x1605va",
+    "brand": "ASUS",
+    "name": "ASUS Vivobook 16 X1605VA - Core i5 13th Gen",
+    "model": "Vivobook 16 X1605VA",
+    "category": "laptops",
+    "price": null,
+    "priceStatus": "awaiting-usd-confirmation",
+    "boxed": null,
+    "featured": false,
+    "referenceOnly": true,
+    "referencePhoto": true,
+    "image": "assets/products/laptops/asus-vivobook-16-x1605va-reference.jpg",
+    "images": [
+      "assets/products/laptops/asus-vivobook-16-x1605va-reference.jpg"
+    ],
+    "description": "Vivobook 16 X1605VA with Intel Core i5-1335U (13th Gen) and a 16-inch display. Model reference for enquiries; confirm RAM, storage, exact configuration, condition, price and current availability before purchasing.",
+    "shortDescription": "Intel Core i5-1335U (13th Gen). 16-inch display. RAM, storage and availability to confirm.",
+    "specifications": {
+      "processor": "Intel Core i5-1335U (13th Gen)",
+      "generation": "X1605VA",
+      "display": "16-inch"
+    },
+    "specificationSource": "https://www.asus.com/sa-en/laptops/for-home/vivobook/vivobook-16-x1605/techspec/",
+    "imageNote": "Illustrative ASUS photograph only; this is not a photograph of the listed Vivobook 16 X1605VA. The pictured model, generation and condition differ or are unverified. Ask for current photographs of the exact device.",
+    "imageSource": {
+      "provider": "Pexels",
+      "url": "https://www.pexels.com/photo/person-using-asus-laptop-1604025/",
+      "author": "Vlad Bagacian",
       "license": "Pexels License",
       "licenseUrl": "https://www.pexels.com/license/"
     }

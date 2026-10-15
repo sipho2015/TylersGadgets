@@ -1,3 +1,5 @@
+import { activeOffer } from '../../core/promotions.js';
+import { recentlyViewed } from './collections.js';
 import { products } from '../../../data/products.js';
 import { siteConfig } from '../../../data/site-config.js';
 import { productGrid, image } from '../../core/ui.js';
@@ -15,18 +17,23 @@ export function filterProducts(items,{search='',category='all',brand='all',condi
  return result.sort((a,b)=>{
   if(sort==='low'||sort==='high'){
    // Unknown prices always follow confirmed prices, in either direction.
-   if(hasPrice(a.price)!==hasPrice(b.price))return hasPrice(a.price)?-1:1;
-   if(!hasPrice(a.price))return 0;
-   return sort==='low'?a.price-b.price:b.price-a.price;
+   const aPrice=activeOffer(a)?.promotional??a.price,bPrice=activeOffer(b)?.promotional??b.price;
+   if(hasPrice(aPrice)!==hasPrice(bPrice))return hasPrice(aPrice)?-1:1;
+   if(!hasPrice(aPrice))return 0;
+   return sort==='low'?aPrice-bPrice:bPrice-aPrice;
   }
   if(sort==='newest')return (Date.parse(b.dateAdded||b.addedAt)||0)-(Date.parse(a.dateAdded||a.addedAt)||0);
   return Number(!!b.featured)-Number(!!a.featured);
  });
 }
 export function renderCatalog(category=null){
- const welcomePhotos=['iphone-14-pro-max','samsung-s21-ultra'].map(id=>products.find(p=>p.id===id)).filter(Boolean);
- const photoCards=welcomePhotos.map(p=>`<a class="catalog-welcome-photo" href="#product/${e(p.slug||p.id)}" aria-label="View ${e(p.name)}">${image(p.image,p.name+' from our collection',true)}<span>${e(p.name)} <b aria-hidden="true">↗</b></span></a>`).join('');
- return `<main class="container section catalog-page" id="main" tabindex="-1"><section class="catalog-welcome" aria-labelledby="catalog-title"><div class="page-heading"><p class="eyebrow">The gadget collection / ${e(siteConfig.serviceArea)}</p><h1 id="catalog-title">Find Your<br>Next Device<span>.</span></h1><p>Phones, laptops and everyday essentials. Clear conditions. A direct conversation.</p><span class="currency-note">Prices in ${e(siteConfig.currency)} · Confirm current stock on WhatsApp</span></div><div class="catalog-welcome-photos">${photoCards}</div></section><div class="catalog-controls"><label class="search-label">Search gadgets<input id="product-search" type="search" placeholder="Search product, brand or model…" autocomplete="off"></label><label>Condition<select id="condition-filter"><option value="all">All conditions</option>${['New','Used','Refurbished','Boxed'].map(c=>`<option>${c}</option>`).join('')}</select></label><label>Availability<select id="availability-filter"><option value="all">All availability</option>${Object.entries(availabilityOptions).map(([value,status])=>`<option value="${value}">${status.label}</option>`).join('')}</select></label><label>Sort by<select id="product-sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="newest">Newest</option></select></label></div><div class="catalog-bar"><div class="filters" aria-label="Product category">${['all','phones','laptops','accessories'].map(c=>`<button type="button" data-filter="${c}" aria-pressed="${c===(category||'all')}" class="${c===(category||'all')?'active':''}">${c==='all'?'All gadgets':c}</button>`).join('')}</div><p id="result-count" role="status" aria-live="polite"></p></div><div id="listing"></div></main>`;
+ const welcomePhotos=[
+  {category:'phones',label:'Phones',product:products.find(p=>p.id==='iphone-14-pro-max')},
+  {category:'laptops',label:'Laptops',product:products.find(p=>p.id==='macbook-air')},
+  {category:'accessories',label:'Accessories',product:products.find(p=>p.id==='phone-lanyard-straps')}
+ ].filter(item=>item.product);
+ const photoCards=welcomePhotos.map(({category,label,product})=>`<a class="catalog-welcome-photo" href="#${category}" aria-label="Browse ${label.toLowerCase()}">${image(product.image,product.name+' from our collection',true)}<span>${label} <b aria-hidden="true">&#8599;</b></span></a>`).join('');
+ return `<main class="container section catalog-page" id="main" tabindex="-1"><section class="catalog-welcome" aria-labelledby="catalog-title"><div class="page-heading"><p class="eyebrow">The gadget collection / ${e(siteConfig.serviceArea)}</p><h1 id="catalog-title">Find Your<br>Next Device<span>.</span></h1><p>Phones, laptops and everyday essentials. Clear conditions. A direct conversation.</p><span class="currency-note">Prices in ${e(siteConfig.currency)} · Confirm current stock on WhatsApp</span></div><div class="catalog-welcome-photos">${photoCards}</div></section><div class="catalog-controls"><label class="search-label">Search gadgets<input id="product-search" type="search" placeholder="Search product, brand or model…" autocomplete="off"></label><label>Condition<select id="condition-filter"><option value="all">All conditions</option>${['New','Used','Refurbished','Boxed'].map(c=>`<option>${c}</option>`).join('')}</select></label><label>Availability<select id="availability-filter"><option value="all">All availability</option>${Object.entries(availabilityOptions).map(([value,status])=>`<option value="${value}">${status.label}</option>`).join('')}</select></label><label>Sort by<select id="product-sort"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="newest">Newest</option></select></label></div><div class="catalog-bar"><div class="filters" aria-label="Product category">${['all','phones','laptops','accessories'].map(c=>`<button type="button" data-filter="${c}" aria-pressed="${c===(category||'all')}" class="${c===(category||'all')?'active':''}">${c==='all'?'All gadgets':c}</button>`).join('')}</div><button type="button" class="text-button" id="clear-filters">Clear filters</button><p id="result-count" role="status" aria-live="polite"></p></div><div id="listing"></div>${recentlyViewed()}</main>`;
 }
 export function bindCatalogFilters(){
  const listing=document.querySelector('#listing');if(!listing)return;
@@ -51,6 +58,7 @@ export function bindCatalogFilters(){
   document.querySelector('#reset-filters')?.addEventListener('click',()=>{search.value='';condition.value='all';availability.value='all';sort.value='featured';document.querySelector('[data-filter="all"]').click();});
  }
  document.querySelectorAll('[data-filter]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-filter]').forEach(x=>{x.classList.toggle('active',x===b);x.setAttribute('aria-pressed',String(x===b));});update();}));
+ document.querySelector('#clear-filters')?.addEventListener('click',()=>{search.value='';condition.value='all';availability.value='all';sort.value='featured';selectBrand('all');document.querySelector('[data-filter="all"]').click();});
  search.addEventListener('input',update);
  brandSection.querySelectorAll('[data-brand]').forEach(b=>b.addEventListener('click',()=>{selectBrand(b.dataset.brand);update();}));
  for(const control of [condition,availability,sort])control.addEventListener('change',update);

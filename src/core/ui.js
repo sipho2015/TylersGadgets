@@ -1,3 +1,7 @@
+import { imageManifest } from './image-manifest.js';
+import { activeOffer } from './promotions.js';
+import { selectionButtons } from './selections.js';
+import { productEmail } from './enquiries.js';
 import { siteConfig } from '../../data/site-config.js';
 import { policyLinks } from '../../data/policies.js';
 import { escapeHtml as e, money, generalEnquiry, productEnquiry, productAvailabilityEnquiry } from './format.js';
@@ -6,27 +10,30 @@ export const arrow = '<span aria-hidden="true">↗</span>';
 export const external = 'target="_blank" rel="noopener noreferrer"';
 export const button = (label,href,secondary=false) => `<a class="button${secondary?' secondary':''}" href="${e(href)}" ${href.startsWith('https:')?external:''}>${e(label)} ${arrow}</a>`;
 export function image(src,alt,eager=false,cls='',fallback='assets/placeholders/phone.svg') {
- let responsive='';
+ const prepared=imageManifest[src];
+ const sizes=src===siteConfig.logo?'43px':cls==='main-product-image'?'(max-width: 600px) calc(100vw - 72px), 45vw':cls==='gallery-image'?'(max-width: 450px) 100vw, (max-width: 800px) 50vw, 33vw':cls.includes('thumbnail')?'76px':eager?'(max-width: 800px) 33vw, 20vw':'(max-width: 600px) 50vw, (max-width: 1100px) 33vw, 25vw';
+ let responsive=prepared?` srcset="${prepared.variants.map(item=>e(item.src)+' '+item.width+'w').join(', ')}" sizes="${sizes}" width="${prepared.width}" height="${prepared.height}"`:'';
  if(src?.startsWith('https://images.unsplash.com/')){
   const url=new URL(src);
   responsive=` srcset="${[400,800,1400].map(w=>{url.searchParams.set('w',w);return e(url.href)+' '+w+'w';}).join(', ')}" sizes="${eager?'100vw':'(max-width: 600px) 100vw, (max-width: 1100px) 50vw, 33vw'}"`;
  }
- return `<img class="${e(cls)}" src="${e(src||fallback)}"${responsive} data-fallback-src="${e(fallback)}" alt="${e(alt)}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
+ return `<img class="${e(cls)}" src="${e(prepared?.src||src||fallback)}"${responsive} data-fallback-src="${e(fallback)}" alt="${e(alt)}" ${eager?'fetchpriority="high"':'loading="lazy"'} decoding="async">`;
 }
 export function header(route='home'){
  const active=/^(product\/|phones|laptops|accessories|shop)/.test(route)?'gadgets':route==='delivery'?'home':route;
- return `${siteConfig.announcement?`<div class="announcement">${e(siteConfig.announcement)}</div>`:''}<header class="site-header"><div class="nav-wrap"><a class="brand" href="#home">${image(siteConfig.logo,siteConfig.name+' logo',true)}<span>${e(siteConfig.name)}<small>${e(siteConfig.serviceArea)}</small></span></a><button class="menu" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button><nav id="navigation" aria-label="Main navigation">${['Home','Gadgets','Repairs','Gallery','About','Contact'].map(n=>`<a href="#${n.toLowerCase()}" ${active===n.toLowerCase()?'aria-current="page"':''}>${n}</a>`).join('')}</nav><a class="nav-cta" href="${generalEnquiry()}" ${external}>WhatsApp Us ${arrow}</a></div></header>`;
+ return `${siteConfig.announcement?`<div class="announcement">${e(siteConfig.announcement)}</div>`:''}<header class="site-header"><div class="nav-wrap"><a class="brand" href="#home">${image(siteConfig.logo,siteConfig.name+' logo',true)}<span>${e(siteConfig.name)}<small>${e(siteConfig.serviceArea)}</small></span></a><button class="menu" aria-controls="navigation" aria-expanded="false" aria-label="Open navigation"><span></span><span></span></button><nav id="navigation" aria-label="Main navigation">${['Home','Gadgets','Repairs','Gallery','About','Contact'].map(n=>`<a href="#${n.toLowerCase()}" ${active===n.toLowerCase()?'aria-current="page"':''}>${n}</a>`).join('')}</nav></div></header>`;
 }
 export const sectionTitle=(kicker,title,text='')=>`<div class="section-title"><p class="eyebrow">${e(kicker)}</p><h2>${e(title)}</h2>${text?`<p class="muted">${e(text)}</p>`:''}</div>`;
 export const conditionBadges=p=>`${p.condition?`<span class="badge condition-${e(p.condition.toLowerCase())}">${e(p.condition)}</span>`:''}${p.boxed===true?'<span class="badge condition-boxed">Boxed</span>':''}`;
 export const availabilityBadge=p=>`<span class="stock stock-${availabilityOptions[p.availability]?p.availability:'unknown'}">${stockStatus(p).label}</span>`;
 export function productActions(p){
  const sold=p.availability==='sold';
- return `<div class="product-actions">${sold?'<button class="button sold-button" type="button" disabled>Sold</button>':button(stockStatus(p).action,p.availability==='in-stock'?productEnquiry(p):productAvailabilityEnquiry(p))}${button(sold?'Ask About Similar Devices':'Ask About This Device',sold?productAvailabilityEnquiry(p):productEnquiry(p,true),true)}</div>`;
+ return `<div class="product-actions">${sold?'<button class="button sold-button" type="button" disabled>Sold</button>':button(stockStatus(p).action,p.availability==='in-stock'?productEnquiry(p):productAvailabilityEnquiry(p))}${sold?button('Ask About Similar Devices',productAvailabilityEnquiry(p),true):''}${button('Enquire by Email',productEmail(p),true)}</div>`;
 }
 export function productCard(p){
- const keySpec=p.storage||Object.values(p.specifications||{})[0]||'';
- return `<article class="product-card"><a class="product-image" href="#product/${e(p.slug||p.id)}">${image(p.image||p.images?.[0],p.name,false,'',fallbackImage(p.category))}<div class="badges">${conditionBadges(p)}</div></a><div class="product-copy"><p class="eyebrow">${e(p.brand)}</p><h3><a href="#product/${e(p.slug||p.id)}">${e(p.name)}</a></h3>${p.category==='phones'&&p.highlights?.length?`<ul class="card-highlights">${p.highlights.map(detail=>`<li>${e(detail)}</li>`).join('')}</ul>`:`<p class="key-spec">${e(keySpec)}${p.conditionInfo&&p.conditionInfo!==p.condition?' · '+e(p.conditionInfo):''}</p>`}${availabilityBadge(p)}<div class="card-bottom"><strong class="${hasPrice(p.price)?'':'price-pending'}">${money(p.price)}</strong><a href="#product/${e(p.slug||p.id)}" aria-label="View details for ${e(p.name)}">View Details ${arrow}</a></div></div></article>`;
+ const offer=activeOffer(p);
+ const keySpec=p.referenceOnly?'Product details and availability to confirm':p.storage||Object.values(p.specifications||{})[0]||'';
+ return `<article class="product-card"><a class="product-image" href="#product/${e(p.slug||p.id)}">${image(p.image||p.images?.[0],p.name,false,'',fallbackImage(p.category))}<div class="badges">${conditionBadges(p)}</div></a><div class="product-copy"><p class="eyebrow">${e(p.brand)}</p><h3><a href="#product/${e(p.slug||p.id)}">${e(p.name)}</a></h3>${p.category==='phones'&&p.highlights?.length?`<ul class="card-highlights">${p.highlights.map(detail=>`<li>${e(detail)}</li>`).join('')}</ul>`:`<p class="key-spec">${e(keySpec)}${p.conditionInfo&&p.conditionInfo!==p.condition?' · '+e(p.conditionInfo):''}</p>`}${availabilityBadge(p)}<div class="card-bottom"><strong class="${hasPrice(offer?.promotional??p.price)?'':'price-pending'}">${money(offer?.promotional??p.price)}</strong>${offer?`<span class="offer-label">${e(offer.label)} ? ${offer.discount}% off <del>${money(offer.original)}</del></span>`:''}<a href="#product/${e(p.slug||p.id)}" aria-label="View details for ${e(p.name)}">View Details ${arrow}</a></div>${selectionButtons(p)}</div></article>`;
 }
 export const productGrid=items=>`<div class="product-grid">${items.map(productCard).join('')}</div>`;
 export const paymentMethods=()=>`<div class="payment-methods" aria-label="Accepted payment methods">${siteConfig.paymentMethods.map(method=>`<span>${e(method)}</span>`).join('')}</div>`;

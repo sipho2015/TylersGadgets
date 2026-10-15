@@ -22,6 +22,9 @@ export function specificationEntries(product) {
  return [...entries.values()];
 }
 export function relatedProducts(product,items,limit=4){
- return items.filter(p=>p.id!==product.id).map((p,index)=>({p,index,score:Number(p.category===product.category)*2+Number(p.brand===product.brand)}))
+ const seen=new Set([product.id]);
+ return items.filter(p=>{if(seen.has(p.id))return false;seen.add(p.id);return true;})
+ .map((p,index)=>({p,index,score:Number(p.category===product.category)*10+Number(!!p.brand&&p.brand===product.brand)*4+Number(!!p.storage&&p.storage===product.storage)*2+(['in-stock','low-stock'].includes(p.availability)?3:p.availability==='sold'?-8:0)+(typeof p.price==='number'&&typeof product.price==='number'?Math.max(0,2-Math.abs(p.price-product.price)/Math.max(product.price,1)):0)}))
+ .filter(({p})=>p.category===product.category||p.category==='accessories')
  .sort((a,b)=>b.score-a.score||a.index-b.index).slice(0,limit).map(({p})=>p);
 }

@@ -1,0 +1,78 @@
+{
+  "layouts": [
+    {
+      "width": 320,
+      "route": "/laptops/"
+    },
+    {
+      "width": 320,
+      "route": "/accessories/"
+    },
+    {
+      "width": 320,
+      "route": "/assets/products/photo-guide.html"
+    },
+    {
+      "width": 375,
+      "route": "/laptops/"
+    },
+    {
+      "width": 375,
+      "route": "/accessories/"
+    },
+    {
+      "width": 375,
+      "route": "/assets/products/photo-guide.html"
+    },
+    {
+      "width": 430,
+      "route": "/laptops/"
+    },
+    {
+      "width": 430,
+      "route": "/accessories/"
+    },
+    {
+      "width": 430,
+      "route": "/assets/products/photo-guide.html"
+    },
+    {
+      "width": 768,
+      "route": "/laptops/"
+    },
+    {
+      "width": 768,
+      "route": "/accessories/"
+    },
+    {
+      "width": 768,
+      "route": "/assets/products/photo-guide.html"
+    },
+    {
+      "width": 1024,
+      "route": "/laptops/"
+    },
+    {
+      "width": 1024,
+      "route": "/accessories/"
+    },
+    {
+      "width": 1024,
+      "route": "/assets/products/photo-guide.html"
+    },
+    {
+      "width": 1440,
+      "route": "/laptops/"
+    },
+    {
+      "width": 1440,
+      "route": "/accessories/"
+    },
+    {
+      "width": 1440,
+      "route": "/assets/products/photo-guide.html"
+    }
+  ],
+  "photos": 22,
+  "errors": []
+}

@@ -1,0 +1,201 @@
+{
+  "layouts": [
+    {
+      "slug": "iphone-14-pro-max",
+      "width": 320,
+      "scroll": 320,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "iphone-x",
+      "width": 320,
+      "scroll": 320,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "macbook-air",
+      "width": 320,
+      "scroll": 320,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "phone-lanyard-straps",
+      "width": 320,
+      "scroll": 320,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "iphone-14-pro-max",
+      "width": 375,
+      "scroll": 375,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "iphone-x",
+      "width": 375,
+      "scroll": 375,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "macbook-air",
+      "width": 375,
+      "scroll": 375,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "phone-lanyard-straps",
+      "width": 375,
+      "scroll": 375,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "iphone-14-pro-max",
+      "width": 430,
+      "scroll": 430,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "iphone-x",
+      "width": 430,
+      "scroll": 430,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "macbook-air",
+      "width": 430,
+      "scroll": 430,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "phone-lanyard-straps",
+      "width": 430,
+      "scroll": 430,
+      "barVisible": true,
+      "floatVisible": false,
+      "galleryColumns": 1
+    },
+    {
+      "slug": "iphone-14-pro-max",
+      "width": 768,
+      "scroll": 768,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "iphone-x",
+      "width": 768,
+      "scroll": 768,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "macbook-air",
+      "width": 768,
+      "scroll": 768,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "phone-lanyard-straps",
+      "width": 768,
+      "scroll": 768,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "iphone-14-pro-max",
+      "width": 1024,
+      "scroll": 1024,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "iphone-x",
+      "width": 1024,
+      "scroll": 1024,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "macbook-air",
+      "width": 1024,
+      "scroll": 1024,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "phone-lanyard-straps",
+      "width": 1024,
+      "scroll": 1024,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "iphone-14-pro-max",
+      "width": 1440,
+      "scroll": 1440,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "iphone-x",
+      "width": 1440,
+      "scroll": 1440,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "macbook-air",
+      "width": 1440,
+      "scroll": 1440,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    },
+    {
+      "slug": "phone-lanyard-straps",
+      "width": 1440,
+      "scroll": 1440,
+      "barVisible": false,
+      "floatVisible": true,
+      "galleryColumns": 2
+    }
+  ],
+  "errors": [],
+  "failures": [],
+  "interactions": "passed",
+  "sharingFallback": "passed",
+  "syntheticStockStates": "passed"
+}

@@ -1,0 +1,107 @@
+{
+  "layouts": [
+    {
+      "width": 320,
+      "viewport": 320,
+      "scrollWidth": 320,
+      "valueColumns": 1,
+      "hero": 1
+    },
+    {
+      "width": 375,
+      "viewport": 375,
+      "scrollWidth": 375,
+      "valueColumns": 1,
+      "hero": 1
+    },
+    {
+      "width": 430,
+      "viewport": 430,
+      "scrollWidth": 430,
+      "valueColumns": 1,
+      "hero": 1
+    },
+    {
+      "width": 768,
+      "viewport": 768,
+      "scrollWidth": 768,
+      "valueColumns": 2,
+      "hero": 2
+    },
+    {
+      "width": 1024,
+      "viewport": 1024,
+      "scrollWidth": 1024,
+      "valueColumns": 2,
+      "hero": 2
+    },
+    {
+      "width": 1440,
+      "viewport": 1440,
+      "scrollWidth": 1440,
+      "valueColumns": 4,
+      "hero": 2
+    }
+  ],
+  "links": [
+    {
+      "text": "Explore Gadgets ↗",
+      "href": "http://localhost:3100/gadgets/"
+    },
+    {
+      "text": "Contact Us ↗",
+      "href": "http://localhost:3100/#contact"
+    },
+    {
+      "text": "",
+      "href": "http://localhost:3100/gadgets/"
+    },
+    {
+      "text": "Explore Gadgets ↗",
+      "href": "http://localhost:3100/gadgets/"
+    },
+    {
+      "text": "",
+      "href": "http://localhost:3100/accessories/"
+    },
+    {
+      "text": "Shop Accessories ↗",
+      "href": "http://localhost:3100/accessories/"
+    },
+    {
+      "text": "",
+      "href": "http://localhost:3100/repairs/"
+    },
+    {
+      "text": "Explore Repairs ↗",
+      "href": "http://localhost:3100/repairs/"
+    },
+    {
+      "text": "Chat on WhatsApp ↗",
+      "href": "https://wa.me/263789652298?text=Hi%20Tyler%27s%20Gadgets%2C%20I%20have%20a%20question.%20Can%20you%20help%3F"
+    },
+    {
+      "text": "Send an Email ↗",
+      "href": "mailto:siphomoyo893@gmail.com?subject=General%20enquiry&body=Hello%20Tyler%27s%20Gadgets%2C%20I%20have%20a%20question%20about%20a%20gadget%20or%20repair."
+    },
+    {
+      "text": "+263 789 652 298",
+      "href": "tel:+263789652298"
+    },
+    {
+      "text": "siphomoyo893@gmail.com",
+      "href": "mailto:siphomoyo893@gmail.com?subject=General%20enquiry&body=Hello%20Tyler%27s%20Gadgets%2C%20I%20have%20a%20question."
+    },
+    {
+      "text": "Browse Gadgets ↗",
+      "href": "http://localhost:3100/gadgets/"
+    },
+    {
+      "text": "Contact Us ↗",
+      "href": "http://localhost:3100/#contact"
+    }
+  ],
+  "errors": [],
+  "staticContent": "passed",
+  "navigation": "passed"
+}

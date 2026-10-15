@@ -1,0 +1,95 @@
+{
+  "layouts": [
+    {
+      "count": 1,
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "count": 1,
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "count": 1,
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "count": 1,
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "count": 1,
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "count": 1,
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "count": 2,
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "count": 2,
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "count": 2,
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "count": 2,
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "count": 2,
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "count": 2,
+      "width": 1440,
+      "overflow": false
+    },
+    {
+      "count": 3,
+      "width": 320,
+      "overflow": false
+    },
+    {
+      "count": 3,
+      "width": 375,
+      "overflow": false
+    },
+    {
+      "count": 3,
+      "width": 430,
+      "overflow": false
+    },
+    {
+      "count": 3,
+      "width": 768,
+      "overflow": false
+    },
+    {
+      "count": 3,
+      "width": 1024,
+      "overflow": false
+    },
+    {
+      "count": 3,
+      "width": 1440,
+      "overflow": false
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,513 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "route": "/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/gadgets/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/product/iphone-14-pro-max/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/repairs/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/gallery/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/about/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/phones/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/laptops/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/accessories/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/warranty/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/returns/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/delivery-policy/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/privacy/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 320,
+      "route": "/terms/",
+      "viewport": 320,
+      "scroll": 320
+    },
+    {
+      "width": 375,
+      "route": "/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/gadgets/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/product/iphone-14-pro-max/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/repairs/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/gallery/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/about/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/phones/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/laptops/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/accessories/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/warranty/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/returns/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/delivery-policy/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/privacy/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 375,
+      "route": "/terms/",
+      "viewport": 375,
+      "scroll": 375
+    },
+    {
+      "width": 430,
+      "route": "/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/gadgets/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/product/iphone-14-pro-max/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/repairs/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/gallery/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/about/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/phones/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/laptops/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/accessories/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/warranty/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/returns/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/delivery-policy/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/privacy/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 430,
+      "route": "/terms/",
+      "viewport": 430,
+      "scroll": 430
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/gadgets/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/product/iphone-14-pro-max/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/repairs/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/gallery/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/about/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/phones/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/laptops/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/accessories/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/warranty/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/returns/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/delivery-policy/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/privacy/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 768,
+      "route": "/terms/",
+      "viewport": 768,
+      "scroll": 768
+    },
+    {
+      "width": 1024,
+      "route": "/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/gadgets/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/product/iphone-14-pro-max/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/repairs/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/gallery/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/about/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/phones/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/laptops/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/accessories/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/warranty/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/returns/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/delivery-policy/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/privacy/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1024,
+      "route": "/terms/",
+      "viewport": 1024,
+      "scroll": 1024
+    },
+    {
+      "width": 1440,
+      "route": "/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/gadgets/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/product/iphone-14-pro-max/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/repairs/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/gallery/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/about/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/phones/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/laptops/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/accessories/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/warranty/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/returns/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/delivery-policy/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/privacy/",
+      "viewport": 1440,
+      "scroll": 1440
+    },
+    {
+      "width": 1440,
+      "route": "/terms/",
+      "viewport": 1440,
+      "scroll": 1440
+    }
+  ],
+  "overflow": [],
+  "errors": [],
+  "responseErrors": [],
+  "functional": "passed",
+  "noJavaScript": "passed"
+}

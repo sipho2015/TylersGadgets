@@ -15,3 +15,15 @@
 .hero h1{font-size:clamp(36px,4.6vw,64px);max-width:760px;line-height:1.09}.hero{min-height:570px}.trade-details{margin-top:24px}.trade-details summary{cursor:pointer;font-size:14px;font-weight:650;min-height:44px;display:flex;align-items:center}.contact-form{margin-top:20px}.form-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-form label{display:grid;gap:7px;font-size:13px;font-weight:600}.contact-form input{width:100%;min-width:0;border:1px solid #bbc9be;border-radius:8px;padding:12px;background:white;font-size:16px}.contact-form .actions{gap:10px}.contact-form .button{padding:12px 16px;gap:10px}.trade-panel{align-items:start}.trade-panel>img{position:sticky;top:110px}.benefits figure{margin:0;background:white;border:1px solid var(--line);border-radius:var(--radius);padding:28px}.benefits blockquote{margin:0 0 20px;font-size:16px}.benefits figcaption{font-size:13px;font-weight:650}.benefits figcaption span,.benefits figcaption small{display:block;margin-top:8px}.benefits figcaption span{color:var(--accent)}.offer-label{font-size:12px;color:var(--accent)}
 @media(max-width:800px){.trade-panel{grid-template-columns:1fr}.trade-panel>div{padding:30px}.trade-panel>img{position:static;max-height:280px}.hero{min-height:500px}}
 @media(max-width:430px){.form-fields{grid-template-columns:1fr}.trade-panel>div{padding:24px}.hero h1{font-size:36px}}
+
+@media(max-width:600px){
+ .hero{min-height:560px}.hero-content{padding-top:40px;padding-bottom:130px}
+ .hero h1{font-size:clamp(36px,9vw,46px);line-height:1.12}
+ .hero-content>p:not(.eyebrow){font-size:16px}.hero-note{font-size:10px;line-height:1.7}
+ .trust-strip{gap:20px 16px;padding-block:24px}.trust-strip>div{font-size:13px}
+ .service-list{grid-template-columns:1fr;font-size:15px;gap:12px}
+ .trade-panel>div{padding:24px}.trade-panel p{font-size:15px}
+ .faq-list summary{font-size:16px;min-height:60px}.faq-list details p{font-size:15px}
+ .form-fields{grid-template-columns:1fr}.contact-form label{font-size:14px}
+ .delivery-options article{padding:24px}.delivery-options p,.delivery-note{font-size:15px}
+}

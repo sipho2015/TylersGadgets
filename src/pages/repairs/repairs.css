@@ -11,3 +11,5 @@
 @media(max-width:600px){.repair-enquiry-panel{grid-template-columns:1fr;padding:24px;margin-bottom:50px}}
 @media(max-width:450px){.repair-grid{grid-template-columns:1fr}}
 #repair-enquiry-form textarea{width:100%;border:1px solid #bbc9be;border-radius:8px;padding:13px;background:white;font-size:16px}.repair-showcase{display:grid;gap:28px}.repair-pair{display:grid;grid-template-columns:1fr 1fr;gap:20px}.repair-pair figure{margin:0}.repair-pair img{width:100%;aspect-ratio:1;object-fit:contain}.repair-pair figcaption{padding:12px;font-size:14px}
+
+@media(max-width:600px){.repair-grid{grid-template-columns:1fr;gap:18px}.repair-grid article{padding:24px}.repair-grid p,.repair-enquiry-panel p{font-size:15px}.repair-grid .button{font-size:15px;width:100%}.service-icon{margin-bottom:20px}.repair-enquiry-panel{padding:24px;gap:20px}#repair-enquiry-form label{font-size:14px}.repair-pair{gap:12px}}

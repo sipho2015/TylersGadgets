@@ -32,7 +32,7 @@ export function bindCollections(){
  const render=()=>{const html=collectionContent(kind);document.querySelector('#collection-content').innerHTML=document.documentElement.dataset.static==='true'?staticLinks(html):html;};
  const sync=()=>{
   root.querySelectorAll('[data-count]').forEach(el=>el.textContent=selections.ids(el.dataset.count).length);
-  root.querySelectorAll('[data-selection][aria-pressed]').forEach(el=>{const active=selections.has(el.dataset.selection,el.dataset.productId);el.setAttribute('aria-pressed',String(active));el.textContent=({compare:active?'In comparison':'Compare',saved:active?'Saved':'Save for Later',enquiry:active?'In enquiry list':'Add to Enquiry'})[el.dataset.selection];});
+  root.querySelectorAll('[data-selection][aria-pressed]').forEach(el=>{const active=selections.has(el.dataset.selection,el.dataset.productId);el.setAttribute('aria-pressed',String(active));el.textContent=({compare:active?'In comparison':'Compare',saved:active?'Saved':el.closest('.product-card')?'Save':'Save for Later',enquiry:active?'In enquiry list':'Add to Enquiry'})[el.dataset.selection];});
  };
  root.addEventListener('click',event=>{
   const action=event.target.closest('[data-selection],[data-open-collection],[data-clear-collection],.collection-close');if(!action)return;

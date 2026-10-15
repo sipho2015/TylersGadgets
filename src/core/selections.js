@@ -28,7 +28,7 @@ let browserStorage;
 try{browserStorage=globalThis.localStorage;}catch{}
 export const selections=createSelections(browserStorage);
 
-export function selectionButtons(p){
+export function selectionButtons(p,compact=false){
  const escape=value=>String(value).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- return `<div class="selection-actions">${[['compare','Compare','In comparison'],['saved','Save for Later','Saved'],['enquiry','Add to Enquiry','In enquiry list']].map(([kind,label,selected])=>`<button type="button" data-selection="${kind}" data-product-id="${escape(p.id)}" aria-label="${label}: ${escape(p.name)}" aria-pressed="${selections.has(kind,p.id)}">${selections.has(kind,p.id)?selected:label}</button>`).join('')}</div>`;
+ return `<div class="selection-actions">${(compact?[['compare','Compare','In comparison'],['saved','Save','Saved']]:[['compare','Compare','In comparison'],['saved','Save for Later','Saved'],['enquiry','Add to Enquiry','In enquiry list']]).map(([kind,label,selected])=>`<button type="button" data-selection="${kind}" data-product-id="${escape(p.id)}" aria-label="${label}: ${escape(p.name)}" aria-pressed="${selections.has(kind,p.id)}">${selections.has(kind,p.id)?selected:label}</button>`).join('')}</div>`;
 }

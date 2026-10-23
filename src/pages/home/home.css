@@ -5,12 +5,12 @@
 .home-hero{background:var(--home-cream);border-bottom:1px solid #e3e5db;margin-top:20px}
 .home-hero-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);align-items:center;gap:44px;padding-block:52px}
 .home-hero-copy{min-width:0}.home-hero-copy>.eyebrow{display:flex;align-items:center;gap:9px;font-size:10px;letter-spacing:.1em}
-.home-location-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0}
+
 .home-hero h1{font-size:clamp(38px,4.7vw,66px);line-height:1.06;letter-spacing:-.055em;margin-bottom:24px;font-weight:650}
 .home-hero-copy>p:not(.eyebrow){max-width:470px;font-size:16px;line-height:1.75;margin-bottom:28px}
 .home-hero .actions{gap:10px}.home-hero .button{gap:16px;padding:14px 19px}
 .home-hero-note{display:flex;align-items:flex-start;gap:10px;max-width:415px;margin-top:26px}
-.home-hero-note>span{display:grid;place-items:center;width:22px;height:22px;flex-shrink:0;background:#e3eadc;color:var(--accent);border-radius:50%;font-size:12px}
+
 .home-hero-note p{font-size:12px;line-height:1.7;margin:0}
 .home-hero-products{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.82fr);gap:16px;align-items:center;min-width:0}
 .home-device{min-width:0;display:block;padding:7px;background:white;border:1px solid #dce2d4;border-radius:18px;box-shadow:0 12px 28px #1929230b;transition:transform .2s,border-color .2s}
@@ -26,12 +26,12 @@
 .home-device-price small{display:inline;margin-left:5px;font-size:10px;letter-spacing:0;font-weight:500}
 .home-device-link{display:flex;justify-content:space-between;align-items:center;padding:10px 8px 5px;font-size:12px;font-weight:650;color:var(--accent)}
 .home-reassurance{display:flex;justify-content:space-between;gap:20px;padding-block:20px;border-bottom:1px solid var(--line)}
-.home-reassurance p{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--ink);margin:0}.home-reassurance p>span{font-size:18px;color:var(--accent)}
+.home-reassurance p{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--ink);margin:0}
 .home-categories{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;padding-top:30px}
 .home-category{display:flex;align-items:center;gap:13px;min-width:0;padding:20px 16px;border:1px solid var(--line);border-radius:14px;background:white;transition:background .2s,border-color .2s}
 .home-category:hover{background:#f4f7f1;border-color:#93b49e}
-.home-category-icon{width:36px;height:38px;flex-shrink:0;color:var(--accent)}.home-category-icon svg{display:block;width:100%;height:100%}
-.home-category strong{font-size:16px;font-weight:650;display:block}.home-category small{font-size:11px;display:block;color:var(--muted);line-height:1.6;margin-top:2px}.home-category>span:last-child{margin-left:auto;color:var(--accent)}
+
+.home-category strong{font-size:16px;font-weight:650;display:block}.home-category small{font-size:11px;display:block;color:var(--muted);line-height:1.6;margin-top:2px}
 .home-picks .section-title{margin-bottom:0}.home-picks .section-row{margin-bottom:28px;align-items:flex-end}.home-picks .section-row>.text-link{white-space:nowrap;margin:0}
 .home-picks .section-title h2{font-size:clamp(30px,3.2vw,42px)}.home-picks .section-title p:last-child{font-size:14px;max-width:550px}
 .home-picks .product-grid{gap:18px}.home-picks .product-image{aspect-ratio:1.1;padding:0}.home-picks .product-image img{object-fit:cover;object-position:center 60%}
@@ -40,11 +40,11 @@
 .home-repair>div{position:relative;z-index:1;max-width:400px}.home-repair h2{font-size:36px;color:white;line-height:1.15;max-width:340px}.home-repair .eyebrow{color:#b9e3c6}.home-repair p{color:#d6e6dd;font-size:15px;max-width:360px}
 .home-service-tags{padding:0;list-style:none;display:flex;gap:7px;flex-wrap:wrap;margin:22px 0 26px}.home-service-tags li{font-size:11px;border:1px solid #608f79;border-radius:6px;padding:5px 8px}
 .home-repair .actions{align-items:center;gap:18px}.home-repair .button{background:#fff;color:var(--home-green);border-color:white;font-size:13px;padding-inline:16px;gap:10px}.home-repair .button:hover{background:#e7f3e7}.home-repair .text-link{color:#d2e9da;font-size:13px}
-.home-repair-art{position:absolute;right:-10px;top:55px;width:180px;height:264px;stroke:#b7dcc4;stroke-width:2.5;opacity:.14;transform:rotate(15deg)}
+
 .home-trade{min-width:0;padding:36px;background:var(--home-cream);border:1px solid #e1e3d8;border-radius:20px;min-height:360px}
 .home-trade h2{font-size:34px;line-height:1.15}.home-trade>p:not(.eyebrow){font-size:15px;max-width:380px}.home-trade>.text-link{display:inline-flex;align-items:center;gap:18px;min-height:44px}
 .trade-details{margin-top:20px;border-top:1px solid #d9ded0;padding-top:8px}.trade-details summary{display:flex;align-items:center;justify-content:space-between;gap:12px;cursor:pointer;font-size:13px;min-height:48px;font-weight:650;list-style:none}
-.trade-details summary::-webkit-details-marker{display:none}.trade-details summary>span{font-size:22px;color:var(--accent)}.trade-details[open] summary>span{transform:rotate(45deg)}
+.trade-details summary::-webkit-details-marker{display:none}
 .contact-form{margin-top:16px}.form-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.contact-form label{display:grid;gap:7px;font-size:13px;font-weight:600;min-width:0}.contact-form input{width:100%;min-width:0;border:1px solid #bbc9be;border-radius:8px;padding:12px;background:white;font-size:16px}.contact-form .actions{gap:10px}.contact-form .button{padding:12px 16px;gap:10px;font-size:13px}
 .home-local{background:#f4f6f2;border-block:1px solid var(--line)}
 .home-local-heading{display:grid;grid-template-columns:1fr 1fr;gap:0 54px;align-items:end;margin-bottom:32px}.home-local-heading .eyebrow{grid-column:1/-1}.home-local-heading h2{font-size:clamp(32px,3.5vw,44px);margin:0;line-height:1.15}.home-local-heading>p:last-child{font-size:16px;margin:0;max-width:470px}
@@ -52,11 +52,11 @@
 .home-panel-label{display:block;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:22px;font-weight:650}.home-local-grid h3{font-size:21px;line-height:1.25;letter-spacing:-.025em;margin-bottom:16px}
 .home-local-grid p{font-size:14px;line-height:1.75}.home-hours{font-weight:600;color:var(--ink)}.home-inline-links{display:flex;flex-wrap:wrap;gap:12px 22px}.home-local-grid .text-link{display:inline-flex;min-height:44px;align-items:center;font-size:13px;gap:10px}.home-local-grid .payment-methods{margin-top:20px}
 .home-contact{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start;padding-top:46px;margin-top:40px;border-top:1px solid #d5ddd1}.home-contact h2{font-size:38px;line-height:1.15;margin-bottom:16px}.home-contact>div>p:not(.eyebrow){font-size:15px}.home-contact .button{gap:12px;font-size:14px}
-.home-contact-details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 20px}.home-contact-details summary{cursor:pointer;min-height:52px;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:650;gap:12px;list-style:none}.home-contact-details summary::-webkit-details-marker{display:none}.home-contact-details summary>span{font-size:22px;color:var(--accent)}.home-contact-details[open] summary>span{transform:rotate(45deg)}.home-contact-details .contact-details{padding:18px 0 12px}
+.home-contact-details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:8px 20px}.home-contact-details summary{cursor:pointer;min-height:52px;display:flex;justify-content:space-between;align-items:center;font-size:14px;font-weight:650;gap:12px;list-style:none}.home-contact-details summary::-webkit-details-marker{display:none}.home-contact-details .contact-details{padding:18px 0 12px}
 .home-faq{display:grid;grid-template-columns:1fr 1.3fr;gap:70px}.home-faq .section-title{margin-bottom:16px}.home-faq h2{font-size:32px}.home-faq>div>p{font-size:15px}
-.faq-list details{border-bottom:1px solid var(--line)}.faq-list summary{padding:19px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;font-size:14px;font-weight:600}.faq-list summary::-webkit-details-marker{display:none}.faq-list summary span{font-size:22px;font-weight:400;color:var(--accent)}.faq-list details[open] summary span{transform:rotate(45deg)}.faq-list details p{font-size:14px;padding:0 25px 10px 0}
+.faq-list details{border-bottom:1px solid var(--line)}.faq-list summary{padding:19px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;cursor:pointer;list-style:none;font-size:14px;font-weight:600}.faq-list summary::-webkit-details-marker{display:none}.faq-list details p{font-size:14px;padding:0 25px 10px 0}
 .home-page .benefits figure{margin:0;background:white;border:1px solid var(--line);border-radius:var(--radius);padding:28px}.home-page .benefits blockquote{margin:0 0 20px;font-size:16px}.home-page .benefits figcaption{font-size:13px;font-weight:650}.home-page .benefits figcaption span,.home-page .benefits figcaption small{display:block;margin-top:8px}.home-page .benefits figcaption span{color:var(--accent)}.offer-label{font-size:12px;color:var(--accent)}
-@media(max-width:1100px){.home-hero-grid{gap:28px}.home-hero h1{font-size:46px}.home-hero-products{gap:12px}.home-category{padding:18px 12px;gap:9px}.home-category-icon{width:28px}.home-category small{font-size:10px}.home-picks .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-repair,.home-trade{padding:28px}.home-local-grid{gap:16px}.home-local-grid article{padding:22px}}
+@media(max-width:1100px){.home-hero-grid{gap:28px}.home-hero h1{font-size:46px}.home-hero-products{gap:12px}.home-category{padding:18px 12px;gap:9px}.home-category small{font-size:10px}.home-picks .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.home-repair,.home-trade{padding:28px}.home-local-grid{gap:16px}.home-local-grid article{padding:22px}}
 @media(max-width:900px){.home-hero-grid{grid-template-columns:1fr;gap:30px;padding-block:36px}.home-hero h1{font-size:52px}.home-hero-copy>p:not(.eyebrow){max-width:560px}.home-hero-products{width:100%;max-width:620px;grid-template-columns:1fr 1fr;align-items:start}.home-device{display:grid;grid-template-columns:1fr .9fr;gap:0 10px;padding:6px}.home-device-photo{grid-row:1/3}.home-device-photo img,.home-device-secondary .home-device-photo img{aspect-ratio:.85}.home-device-secondary{margin-top:0}.home-device-caption{padding:12px 4px 0;gap:8px}.home-device-caption strong{font-size:14px}.home-device-price{font-size:23px}.home-device-link{padding:6px 5px;align-self:end;font-size:11px}.home-photo-label{display:none}.home-categories{grid-template-columns:repeat(2,minmax(0,1fr))}.home-category small{font-size:12px}.home-category{padding:18px;gap:15px}.home-services{grid-template-columns:1fr 1fr}.home-repair h2,.home-trade h2{font-size:30px}.home-repair .actions{flex-direction:column;align-items:flex-start}.home-local-grid{grid-template-columns:1fr}.home-local-grid article{display:grid;grid-template-columns:.8fr 1.4fr;gap:8px 25px}.home-local-grid .home-panel-label{grid-row:1/5;margin-bottom:0}.home-local-grid h3{margin:0}.home-local-grid p{margin:0}.home-local-grid .payment-methods{margin:0}.home-faq{gap:35px}.home-contact{gap:28px;grid-template-columns:1fr}}
 @media(max-width:600px){
  .home-page{--home-space:42px}.home-hero{margin-top:16px}.home-hero-grid{padding-block:30px;gap:26px}
@@ -65,14 +65,59 @@
  .home-hero-note{margin-top:18px}.home-hero-note p{font-size:12px}.home-hero-products{gap:12px;max-width:none}
  .home-device{display:block;min-width:0;padding:6px;border-radius:13px}.home-device-photo{border-radius:9px}.home-device-photo img,.home-device-secondary .home-device-photo img{aspect-ratio:1.08;object-position:center 65%}
  .home-device-caption{padding:10px 5px 0;gap:8px}.home-device-caption strong{font-size:13px;line-height:1.4}.home-device-caption small{font-size:10px}.home-device-price{font-size:23px}.home-device-link{font-size:11px;padding:10px 5px 4px}
- .home-reassurance{display:grid;grid-template-columns:1fr;gap:8px;padding-block:18px}.home-reassurance p{font-size:13px;gap:10px}.home-reassurance p>span{font-size:16px;width:18px;text-align:center}
- .home-categories{padding-top:22px;gap:10px}.home-category{padding:15px 12px;gap:9px;flex-wrap:wrap;position:relative}.home-category-icon{width:28px;height:30px}.home-category>span:nth-child(2){width:100%;min-width:0}.home-category strong{font-size:16px}.home-category small{font-size:11px}.home-category>span:last-child{position:absolute;right:13px;top:19px}
+ .home-reassurance{display:grid;grid-template-columns:1fr;gap:8px;padding-block:18px}.home-reassurance p{font-size:13px;gap:10px}
+ .home-categories{padding-top:22px;gap:10px}.home-category{padding:15px 12px;gap:9px;flex-wrap:wrap;position:relative}.home-category strong{font-size:16px}.home-category small{font-size:11px}
  .home-picks .section-row{display:block;margin-bottom:24px}.home-picks .section-title{margin-bottom:16px}.home-picks .section-title h2{font-size:30px;line-height:1.2}.home-picks .section-title p:last-child{font-size:15px}.home-picks .section-row>.text-link{display:inline-flex;align-items:center;gap:16px;min-height:44px;font-size:14px;margin:0}
  .home-picks .product-grid{grid-template-columns:minmax(0,1fr);gap:20px}.home-picks .product-image{aspect-ratio:1.35}.home-picks .card-highlights{display:none}
- .home-services{grid-template-columns:1fr;gap:16px;padding-top:0}.home-repair,.home-trade{padding:26px 22px;min-height:0}.home-repair h2,.home-trade h2{font-size:31px}.home-repair p,.home-trade>p:not(.eyebrow){font-size:16px}.home-repair .actions{align-items:stretch;gap:12px}.home-repair .actions>.button{flex:initial;font-size:14px;justify-content:space-between}.home-repair .text-link{min-height:44px;display:inline-flex;align-items:center;gap:16px;font-size:14px}.home-repair-art{right:-30px;opacity:.1}
+ .home-services{grid-template-columns:1fr;gap:16px;padding-top:0}.home-repair,.home-trade{padding:26px 22px;min-height:0}.home-repair h2,.home-trade h2{font-size:31px}.home-repair p,.home-trade>p:not(.eyebrow){font-size:16px}.home-repair .actions{align-items:stretch;gap:12px}.home-repair .actions>.button{flex:initial;font-size:14px;justify-content:space-between}.home-repair .text-link{min-height:44px;display:inline-flex;align-items:center;gap:16px;font-size:14px}
  .trade-details summary{font-size:14px}.form-fields{grid-template-columns:1fr}.contact-form label{font-size:14px}.contact-form .button{font-size:14px}.contact-form .actions>.button{flex:auto}
  .home-local-heading{display:block;margin-bottom:26px}.home-local-heading h2{font-size:33px;margin-bottom:18px}.home-local-heading>p:last-child{font-size:16px}.home-local-grid{gap:14px}.home-local-grid article{display:block;padding:24px}.home-local-grid .home-panel-label{margin-bottom:16px;font-size:11px}.home-local-grid h3{font-size:22px;margin-bottom:14px}.home-local-grid p{font-size:15px;margin-bottom:16px}.home-local-grid .payment-methods{margin-top:18px}.home-local-grid .text-link{font-size:14px}
  .home-contact{grid-template-columns:1fr;gap:26px;padding-top:30px;margin-top:28px}.home-contact h2{font-size:33px}.home-contact>div>p:not(.eyebrow){font-size:16px}.home-contact .actions{display:grid;grid-template-columns:1fr}.home-contact .button{justify-content:space-between;font-size:15px}.home-contact-details{padding-inline:16px}.home-contact-details summary{font-size:14px}
  .home-faq{grid-template-columns:1fr;gap:10px}.home-faq .section-title{margin-bottom:12px}.home-faq h2{font-size:30px}.faq-list summary{font-size:15px;padding-block:18px;line-height:1.5}.faq-list details p{font-size:15px;padding-right:0}
 }
 @media(prefers-reduced-motion:reduce){.home-device:hover{transform:none}}
+
+/* Photographic category and service cards. */
+.home-hero-note{padding-left:14px;border-left:2px solid #b9cab6;display:block}
+.home-reassurance p{font-size:13px}
+.home-category{display:flex;flex-direction:column;align-items:stretch;gap:0;padding:0;overflow:hidden;border-radius:16px;position:static}
+.home-category-photo{overflow:hidden;background:#edf0e8}
+.home-category-photo img{display:block;width:100%;height:220px;object-fit:cover;object-position:center;transition:transform .3s}
+.home-category:first-child .home-category-photo img{object-position:center 57%}
+.home-category:hover img{transform:scale(1.025)}
+.home-category-copy{padding:20px 18px;flex:1;display:flex;flex-direction:column}
+.home-category-copy strong{font-size:21px;line-height:1.3}
+.home-category-copy small{font-size:13px;margin-top:6px;line-height:1.6}
+.home-category-note{font-size:10px;color:var(--muted);display:block;margin-top:5px}
+.home-category-link{display:block;color:var(--accent);font-size:13px;font-weight:650;margin-top:auto;padding-top:16px}
+.home-services{grid-template-columns:1fr 1fr;align-items:start}
+.home-repair,.home-trade{padding:28px;min-width:0;min-height:0}
+.home-repair{display:flex;flex-direction:column}
+.home-repair>div{max-width:none}
+.home-repair-photo,.home-trade-photo{margin:-28px -28px 26px;overflow:hidden;background:#e1e6db}
+.home-repair-photo{order:-1}
+.home-repair-photo img,.home-trade-photo img{width:100%;height:270px;object-fit:cover;object-position:center}
+.home-repair-photo figcaption{padding:7px 14px;font-size:11px;background:#0d4031;color:#d4e5db;line-height:1.6}
+.home-trade-photo img{object-position:center 56%}
+.home-repair h2,.home-trade h2{font-size:34px;line-height:1.16}
+.home-trade .contact-form .button{font-size:13px}
+.home-page details>summary::after{content:'Show';font-size:12px;font-weight:600;color:var(--accent);flex-shrink:0;margin-left:auto;letter-spacing:0}
+.home-page details[open]>summary::after{content:'Hide'}
+.home-page .faq-list summary{line-height:1.5}
+body:has(.home-page) .floating-wa>span{display:none}
+@media(max-width:1100px){.home-category-photo img{height:180px}.home-category-copy{padding:18px 14px}.home-category-copy strong{font-size:19px}.home-category-copy small{font-size:12px}}
+@media(max-width:900px){.home-category{padding:0;gap:0}.home-category-photo img{height:220px}.home-category-copy{padding:20px}.home-repair-photo img,.home-trade-photo img{height:220px}.home-repair h2,.home-trade h2{font-size:30px}.home-repair .actions{align-items:stretch}.home-repair .actions>.button{flex:initial}}
+@media(max-width:600px){
+ .home-reassurance{grid-template-columns:1fr;gap:8px}
+ .home-category{padding:0;gap:0;flex-wrap:nowrap;position:static;border-radius:13px}
+ .home-category-photo img{height:150px}.home-category-copy{padding:15px 12px}
+ .home-category-copy strong{font-size:18px}.home-category-copy small{font-size:12px}
+ .home-category-link{font-size:12px;padding-top:12px}.home-category-note{font-size:10px}
+ .home-services{grid-template-columns:1fr;gap:22px}
+ .home-repair,.home-trade{padding:24px}
+ .home-repair-photo,.home-trade-photo{margin:-24px -24px 24px}
+ .home-repair-photo img,.home-trade-photo img{height:230px}
+ .home-repair h2,.home-trade h2{font-size:31px}
+ .home-repair .actions>.button{font-size:14px}
+}
+@media(prefers-reduced-motion:reduce){.home-category:hover img{transform:none}}
